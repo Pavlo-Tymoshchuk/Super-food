@@ -1,0 +1,431 @@
+@media (max-width: 1250px) {
+    .button-arrow {
+        padding: 5px;
+    }
+    
+    .main_reviews__button {
+        left: -30px;
+        width: calc(100% + 60px);
+    }
+}
+
+@media (max-width: 1160px) {
+    
+    /* Main slider */
+    
+    .slider_info {
+        max-width: 320px;
+        padding-top: 105px;
+        
+        .main_caption {
+            margin-bottom: 8px;
+        }
+    }
+    
+    .main-screen__slider {
+        height: 560px;
+        margin-top: -50px;
+        margin-bottom: 65px;
+    }
+    
+    .main-screen__button {
+        bottom: 30px;
+        
+        .number-slider {
+            margin: 0px 5px;
+        }
+    }
+    
+    /* /Main slider */
+    
+    /* Our-secret */
+    
+    .our-secret__wrapper {
+        > p {
+            margin: 15px 0px 0px;
+        }
+        
+        .wrapper {
+            margin-top: 55px;
+        }
+    }
+    
+    .our-secret__main-img {
+        display: none;
+    }
+    
+    .our-secret__list {
+        width: 50%;
+        text-align: center !important;
+        font-size: 16px;
+        line-height: 24px;
+        
+        .description {
+            order: 1;
+            width: 100%;
+        }
+        
+        .img {
+            margin-bottom: 10px;
+        }
+        
+        h5 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        &:last-of-type {
+            
+            .our-secret__item {
+                margin-right: 0px;
+            }
+        }
+    }
+    
+    .our-secret__item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-right: 80px;
+        
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    
+    /* Our-secret */
+    
+    /* Product Cart */
+    
+    .popular-product__wrapper {
+        &::before {
+            display: none;
+        }
+    }
+    
+    .sale-product__wrapper {
+        &::before {
+            display: none;
+        }
+    }
+    
+    .main-page {
+        .product__list,
+        .blog__list {
+            flex-wrap: nowrap;
+            overflow: auto;
+            padding-left: calc((100vw - 750px) / 2);
+            margin-right: -30px;
+            
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .mobile-item {
+                display: block;
+                width: 1px;
+                height: 1px;
+                padding: 10px;
+                
+                &:first-of-type {
+                    display: none;
+                }
+            }
+        }
+        
+        .product__item {
+            margin-right: 30px;
+        }
+    }
+    
+    .product__item {
+        width: 345px;
+        flex-shrink: 0;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 20px;
+        
+        .img {
+            width: 115px;
+            height: 160px;
+            margin: 0px 0px 20px;
+        }
+        
+        .product__description {
+            width: 100%;
+        }
+        
+        .sale-percent {
+            left: 20px;
+        }
+        
+        .name {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .star-sub-info__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 0px;
+        }
+        
+        .star__list {
+            margin: 15px 0px;
+        }
+        
+        .info {
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 22px;
+            max-height: 90px;
+        }
+    }
+    
+    .procuct__item-footer {
+        .price {
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+    
+    .popular-product {
+        margin-bottom: 100px;
+    }
+    
+    .sale-product {
+        margin-bottom: 100px;
+    }
+    
+    /* /Product Cart */
+    
+    /* Subscription */
+    
+    .subscription {
+        background-position: 25% 50%;
+        padding: 30px 0px 50px;
+        margin-bottom: 100px;
+    }
+    
+    .subscription_form {
+        input {
+            width: 55%;
+            font-size: 14px;
+        }
+    }
+    
+    .subscription__wrapper {
+        p {
+            line-height: 24px;
+            margin-top: 15px;
+        }
+    }
+    
+    /* /Subscription */
+    
+    /* Reviews */
+    
+    .main_reviews__wrapper {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+    
+    .main_reviews__text-list {
+        margin-top: 15px;
+    }
+    
+    .main_reviews__text-item {
+        padding: 35px 0px;
+        
+        h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    }
+    
+    .main_reviews__button {
+        top: -70%;
+        left: 50%;
+        width: 530px;
+        transform: translateX(-50%);
+    }
+    
+    /* Reviews */
+    
+    .main-decor-bg {
+        display: none;
+    }
+    
+    /* Blog */
+    
+    .blog {
+        margin-bottom: 100px;
+    }
+    
+    .blog__item  {
+        h5 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .description-header {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .description {
+            height: 190px;
+            padding: 20px 20px 0px;
+        }
+        
+        .more {
+            font-size: 14px;
+            padding: 0px 20px;
+        } 
+    }
+}
+
+@media (max-width: 768px) {
+    /* Main slider */
+    
+    .main-screen__slider {
+        height: 520px;
+    }
+    
+    .slider_info  {
+        max-width: 280px;
+        
+        p {
+            margin-bottom: 30px;
+        }
+    }
+    
+    .main-screen__slider {
+        margin-bottom: 50px;
+    }
+    
+    .main-screen__button {
+        bottom: 25px;
+    }
+    
+    /* /Main slider */
+    
+    /* Our secret */
+    
+    .our-secret__wrapper {
+        > p {
+            margin-top: 8px;
+        }
+        
+        .wrapper {
+            flex-direction: column;
+        }
+    }
+    
+    .our-secret__item {
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    
+    .our-secret__list {
+        width: 100%;
+        margin-bottom: 40px;
+        
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    
+    .our-secret__wrapper {
+        margin-bottom: 50px;
+    }
+    
+    /* /Our secret */
+    
+    /* Product cart */
+    
+    .main-page {
+        .product__list,
+        .blog__list {
+            padding-left: calc((100vw - 400px) / 2);
+        }
+    }
+    
+    .popular-product,
+    .sale-product {
+        margin-bottom: 40px;
+    }
+    
+    /* /Product cart */
+    
+    /* Subscription */
+    
+    .subscription_form {
+        flex-direction: column;
+        
+        input {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .main_button {
+            &.form {
+                max-width: 100%;
+            }
+        }
+    }
+    
+    .subscription {
+        margin-bottom: 50px;
+    }
+    
+    /* Subscription */
+    
+    /* Reviews */
+    
+    .main_reviews__img-list {
+        width: 255px;
+    }
+    
+    .main_reviews__button {
+        width: 100%;
+        top: -40%;
+    }
+    
+    .button-arrow {
+        padding: 10px;
+    }
+    
+    .main_reviews__img-item {
+        font-size: 14px;
+        transform: translateX(-20px) scale(0.9);
+        
+        &.show {
+            transform: translateX(65px) scale(1);
+            
+             + .main_reviews__img-item {
+                transform: translateX(150px) scale(0.9);
+            }
+        }
+    }
+    
+    .main_reviews {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-page {
+        .product__list,
+        .blog__list {
+            .mobile-item {
+                &:first-of-type {
+                    display: block;
+                }
+            }
+        }
+    }
+}
