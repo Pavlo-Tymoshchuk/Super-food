@@ -916,13 +916,24 @@
             </div>
         </div>
     </footer>
-    <section class="js-popup popup__call-back">
-        <div class="popup_wrapper">
-            <button class="js-close popup-close">
+    <section class="js-popup popup__call-back popup active">
+        <form action="#" class="popup_wrapper">
+            <button class="js-close close__popup">
                 <span class="icon-close"></span>
             </button>
-        </div>
+            <h3>Обратный звонок</h3>
+            <p>Укажите номер телефона и мы свяжемся с вами в ближайшее время</p>
+            <label class="input__wrapper">
+                <span>Ваше имя</span>
+                <input class="main-input js-input" type="text" placeholder="Имя">
+            </label>
+            <label class="input__wrapper">
+                <span>Ваш номер телефона</span>
+                <input class="main-input js-input" type="tel" placeholder="+7 (123) 234 45 45">
+            </label>
+        </form>
     </section>
+    <div class="overlay"></div>
     <script src="./js/main.js"></script>
 </body>
 </html>

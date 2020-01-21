@@ -49,10 +49,11 @@
     
     > span {
         position: absolute;
-        right: -15px;
-        top: calc(50% - 2px);
-        font-size: 6px;
+        right: -20px;
+        top: 50%;
+        font-size: 5px;
         transition: transform .4s;
+        transform: translateY(-50%);
     }
 }
 
@@ -105,25 +106,25 @@
     .header-sub__item {
         width: 50%;
         
-        &:nth-child(2n+1) {
+        &:nth-of-type(2n+1) {
             width: 60%;
         }
-        &:nth-child(2n+2) {
+        &:nth-of-type(2n+2) {
             width: 40%;
         }
     }
 }
 
 .header-sub__item {
-    &:nth-child(3n+1) {
+    &:nth-of-type(3n+1) {
         width: 40%;
     }
     
-    &:nth-child(3n+2) {
+    &:nth-of-type(3n+2) {
         width: 36%;
     }
     
-    &:nth-child(3n) {
+    &:nth-of-type(3n) {
         width: 24%;
     }
     margin-bottom: 25px;
@@ -136,7 +137,7 @@
 }
 
 .header_drop {
-    padding: 20px 0px;
+    padding: 22px 0px;
     
     button {
         cursor: pointer;
