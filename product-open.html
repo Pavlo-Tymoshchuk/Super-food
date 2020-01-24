@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super-food</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <a href="#" class="header-logo">
+                <img src="./img/logo.svg" alt="Logo">
+            </a>
+            <div class="header__wrapper container">
+                <button class="burger-menu"></button>
+                <ul class="header__list">
+                    <li class="header__item header_drop">
+                        <button>меню</button>
+                        <span class="icon-menu-icon"></span>
+                        <ul class="header-sub__list header-menu js-popup">
+                            <div class="header-mobile-search">
+                                <label>
+                                    <span class="icon-search"></span>
+                                    <input type="text" class="mobile-search__input">
+                                </label>
+                                <ul class="header-search__list">
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                </ul>
+                            </div>
+                            <button class="close-menu js-close">
+                                <span class="icon-close"></span>
+                            </button>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">каталог</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">блог</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">доставка</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">о компании</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">фотогалерея</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">документация</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">рецепты</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">отзывы</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">контакты</a>
+                            </li>
+                            <li class="header-sub__item header-mobile-lang">
+                                <a href="#" class="header-sub__link">Рус</a>
+                            </li>
+                            <li class="header-sub__item header-mobile-lang">
+                                <a href="#" class="header-sub__link">Eng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">женская линейка</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">мужская линейка</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">детская линейка</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">мороженое</a>
+                    </li>
+                    <li class="header__item header_categories header_drop">
+                        <button>все категории</button>
+                        <span class="icon-menu-icon"></span>
+                        <ul class="header-sub__list js-popup">
+                            <button class="close-menu js-close">
+                                <span class="icon-close"></span>
+                            </button>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">женская линейка</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">мороженое</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">мужская линейка</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">доп катерория</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">детская линейка</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">доп категория 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="header-lang__list">
+                    <li class="header-lang__item"><a href="#" class="header-lang___link">Рус</a></li>
+                    <li class="header-lang__item"><a href="#" class="header-lang___link">Eng</a></li>
+                </ul>
+            </div>
+            <div class="header-buttons">
+                <div class="header-search">
+                    <button class="button-search"><span class="icon-search"></span></button>
+                    <input type="text" class="header-search__input">
+                    <ul class="header-search__list">
+                        <a href="#" class="header-search__item">
+                            <img src="./img/product-img-2.png" alt="Product">
+                            <p class="name">Super Food 2 (300 г)</p>
+                            <span>1 200 руб</span>
+                        </a>
+                        <a href="#" class="header-search__item">
+                            <img src="./img/product-img-2.png" alt="Product">
+                            <p class="name">Super Food 2 (300 г)</p>
+                            <span>1 200 руб</span>
+                        </a>
+                        <a href="#" class="header-search__item">
+                            <img src="./img/product-img-2.png" alt="Product">
+                            <p class="name">Super Food 2 (300 г)</p>
+                            <span>1 200 руб</span>
+                        </a>
+                        <a href="#" class="header-search__item">
+                            <img src="./img/product-img-2.png" alt="Product">
+                            <p class="name">Super Food 2 (300 г)</p>
+                            <span>1 200 руб</span>
+                        </a>
+                    </ul>
+                </div>
+                <button class="header-catalog">
+                    <span class="icon-catalog"></span>
+                </button>
+                <a href="#" class="button-car">
+                    <span class="icon-card"></span>
+                </a>
+            </div>
+        </nav>
+        <!-- <section class="push_notification">
+            <ul class="push_notification__list">
+                <li class="noty_theme__push_notification__item">
+                    <button class="close__popup"><span class="icon-close"></span></button>
+                    <p>Обратный звонок оформлен!</p>
+                    <div class="img">
+                        <img src="./img/green.png" alt="Листок">
+                    </div>
+                    <div class="img img-error">
+                        <img src="./img/autumn.png" alt="Листок">
+                    </div>
+                </li>
+            </ul>
+        </section> -->
+    </header>
+    <main>
+        <div class="breadcrumbs container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item active">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="breadcrumbs__item active">
+                    <a href="#">SuperFood 1</a>
+                </li>
+            </ul>
+        </div>
+        <section class="product">
+            <div class="product__wrapper container">
+                <div class="product__slider slider">
+                    <ul class="product__slider_list">
+                        <li class="product__slider_item show js-slider-item" data-index="1">
+                            <img src="./img/product-slider-img-1.png" alt="Упаковка">
+                        </li>
+                        <li class="product__slider_item js-slider-item" data-index="2">
+                            <img src="./img/product-slider-img-1.png" alt="Упаковка">
+                        </li>
+                        <li class="product__slider_item js-slider-item" data-index="3">
+                            <img src="./img/product-slider-img-1.png" alt="Упаковка">
+                        </li>
+                    </ul>
+                    <div class="product__dots_list">
+                        <button class="product__dots_button active js-dot" data-index="1"></button">
+                        <button class="product__dots_button js-dot" data-index="2"></button>
+                        <button class="product__dots_button js-dot" data-index="3"></button>
+                    </div>
+                    <div class="product__slider_buttons js-arrows">
+                        <button class="prev disable">
+                            <span class="icon-menu-icon"></span>
+                        </button>
+                        <button class="next">
+                            <span class="icon-menu-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <div class="product__info-header">
+                        <h4 class="name">Super fOOD 1</h4>
+                        <ul class="star__list">
+                            <li class="star__item">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="star__item">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="star__item active">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="star__item">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="star__item">
+                                <span class="icon-star"></span>
+                            </li>
+                        </ul>
+                        <div class="product-code__wrapper">
+                            <p class="product-availability">Есть в наличии</p>
+                            <p class="product-code">Код товара: <span>165068</span></p>
+                        </div>
+                    </div>
+                    <ul class="product__info_list">
+                        <li class="product__info_item">
+                            <span class="type">Категория:</span>
+                            <span class="description">Мужская линейка</span>
+                        </li>
+                        <li class="product__info_item">
+                            <span class="type">Вес:</span>
+                            <span class="description">300г</span>
+                        </li>
+                        <li class="product__info_item">
+                            <span class="type">Тип:</span>
+                            <span class="description">Природный энергетик</span>
+                        </li>
+                        <li class="product__info_item">
+                            <span class="type">Назначение: </span>
+                            <span class="description">Укрепление иммунитета</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="product-delivery">Условия доставки и оплаты</a>
+                    <div class="price__wrapper">
+                        <p class="price_old">1 500 <span>руб</span></p>
+                        <p class="price">1 200 <span>руб</span></p>
+                    </div>
+                    <div class="product-order__wrapper">
+                        <div class="product-calc js-calc">
+                            <button class="delete"></button>
+                            <div class="product-calc__decor-input">1</div>
+                            <input class="input" type="text"  value="1" hidden> 
+                            <button class="add"></button>
+                        </div>
+                        <div class="product-card">
+                            <button class="main-button-color"><span class="icon-card"></span>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-tabs">
+            <div class="product-tabs container">
+                <ul class="product-tabs__list">
+                    <li class="product-tabs__item active">Описание</li>
+                    <li class="product-tabs__item">Состав</li>
+                    <li class="product-tabs__item">Пищевая ценность</li>
+                    <li class="product-tabs__item">Применение</li>
+                    <li class="product-tabs__item">Условия хранения</li>
+                    <li class="product-tabs__item">Меры предосторожности</li>
+                </ul>
+                <div class="product-tabs__content">
+                    <p>Гранола - это невероятно вкусный, полезный и питательный завтрак, который состоит из запеченной овсяной крупы, а также из орехов, сухофруктов, меда и других ингредиентов. Основа гранолы - овсяная крупа, которую запекают в духовке для получения хрустящей корочки. Овсянка способствует хорошему пищеварению и питает энергией. Мед сильнейшее иммунозащитное средство, и хорошо поднимает настроение. Орехи, сухофрукты и семечки очень питательны, содержат в себе витамины, микро- и макроэлементы, которые способствуют мозговой активности и поддержанию тонуса.Преимущество гранолы в том, что она насыщена клетчаткой и имеет полностью натуральный состав (без ароматизаторов и усилителей вкуса). Ее можно употреблять не только на завтрак, но и на протяжении всего дня.</p>
+                </div>
+            </div>
+        </section>
+        <section class="add_reviews"> 
+            <div class="add_reviews__wrapper container">
+                <h3 class="main_caption">Отзывы о товаре</h3>
+                <button class="main_button form js-button" data-target="reviews">Написать отзыв</button>
+                <ul class="add_reviews__list">
+                    <li class="add_reviews__item js-item">
+                        <div class="reviews_img">
+                            <img src="./img/reviews-img-1.png" alt="Фото">
+                        </div>
+                        <div class="reviews__info">
+                            <div class="reviews__info-header">
+                                <div class="reviews-mobile_img">
+                                    <img src="./img/reviews-img-1.png" alt="Фото">
+                                </div>
+                                <div class="wrapper">
+                                    <div>
+                                        <p class="reviews-name">Татьяна</p>
+                                        <p class="reviews-data">11.12.2019</p>
+                                    </div>
+                                    <ul class="star__list">
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item active">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём >Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём >Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём</p>
+                            </div>
+                            <button class="more_info"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="product-slider">
+            <div class="product-slider__wrapper container">
+                <ul class="product__list">
+                    <span class="mobile-item"></span>
+                    <li class="product__item">
+                        <a href="#" class="img">
+                            <img src="./img/product-img-1.png" alt="Продукт">
+                        </a>
+                        <div class="product__description">
+                            <a href="#" class="name">Super Food 1 <span class="product_weight">(300 г)</span></a>
+                            <div class="star-sub-info__wrapper">
+                                <p>Природный энергетик</p>
+                                <ul class="star__list">
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item active">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <p><span>Состав:</span>пшеница нешлифованная твёрдых сортов, с сохранением зародыша зерна; овёс с сохранённой оболочкой; расторопша; лён; кунжут.</p>
+                            </div>
+                            <div class="procuct__item-footer">
+                                <div class="price__wrapper">
+                                    <p class="price">1 200 <span>руб</span></p>
+                                </div>
+                                <button class="product-add-to-card">
+                                    <span class="icon-card"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product__item">
+                        <a href="#" class="img">
+                            <img src="./img/product-img-2.png" alt="Продукт">
+                        </a>
+                        <div class="product__description">
+                            <a href="#" class="name">Super Food 1 <span class="product_weight">(300 г)</span></a>
+                            <div class="star-sub-info__wrapper">
+                                <p>Природный энергетик</p>
+                                <ul class="star__list">
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item active">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <p><span>Состав:</span>пшеница нешлифованная твёрдых сортов, с сохранением зародыша зерна; овёс с сохранённой оболочкой; расторопша; лён; кунжут.</p>
+                            </div>
+                            <div class="procuct__item-footer">
+                                <div class="price__wrapper">
+                                    <p class="price">1 200 <span>руб</span></p>
+                                </div>
+                                <button class="product-add-to-card">
+                                    <span class="icon-card"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product__item">
+                        <a href="#" class="img">
+                            <img src="./img/product-img-3.png" alt="Продукт">
+                        </a>
+                        <div class="product__description">
+                            <a href="#" class="name">Super Food 1 <span class="product_weight">(300 г)</span></a>
+                            <div class="star-sub-info__wrapper">
+                                <p>Природный энергетик</p>
+                                <ul class="star__list">
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item active">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <p><span>Состав:</span>пшеница нешлифованная твёрдых сортов, с сохранением зародыша зерна; овёс с сохранённой оболочкой; расторопша; лён; кунжут.</p>
+                            </div>
+                            <div class="procuct__item-footer">
+                                <div class="price__wrapper">
+                                    <p class="price">1 200 <span>руб</span></p>
+                                </div>
+                                <button class="product-add-to-card">
+                                    <span class="icon-card"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product__item">
+                        <a href="#" class="img">
+                            <img src="./img/product-img-4.png" alt="Продукт">
+                        </a>
+                        <div class="product__description">
+                            <a href="#" class="name">Super Food 1 <span class="product_weight">(300 г)</span></a>
+                            <div class="star-sub-info__wrapper">
+                                <p>Природный энергетик</p>
+                                <ul class="star__list">
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item active">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <p><span>Состав:</span>пшеница нешлифованная твёрдых сортов, с сохранением зародыша зерна; овёс с сохранённой оболочкой; расторопша; лён; кунжут.</p>
+                            </div>
+                            <div class="procuct__item-footer">
+                                <div class="price__wrapper">
+                                    <p class="price">1 200 <span>руб</span></p>
+                                </div>
+                                <button class="product-add-to-card">
+                                    <span class="icon-card"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <span class="mobile-item"></span>
+                </ul>
+                <div class="number__button">
+                    <button class="button-prev no-active button-arrow">
+                        <span class="icon-prev"></span>
+                    </button>
+                    <ul class="number-slider">
+                        <li class="current">1</li>
+                        <li>/</li>
+                        <li class="all-slider">3</li>
+                    </ul>
+                    <button class="button-next button-arrow">
+                        <span class="icon-next"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="container">
+                <a href="/" class="footer_logo">
+                    <img src="./img/footer-logo.svg" alt="Logo">
+                </a>
+                <div class="footer__contact-info">
+                    <p>
+                        <span class="icon-phone"></span>
+                        <a href="tel: +7 (123) 234 45 45">+7 (123) 234 45 45</a>
+                    </p>
+                    <p>
+                        <span class="icon-call-back"></span>
+                        <button class="js-button" data-target="call-back">Обратная связь</button>
+                    </p>
+                    <p>
+                        <span class="icon-place"></span>
+                        <span>Москва, Подольское ш., д.8</span>
+                    </p>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#">Магазин</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">доставка</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">о компании</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">фотогалерея</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">документация</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">рецепты</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">отзывы</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">контакты</a>
+                    </li>
+                </ul>
+                <div class="footer-mobile__info">
+                    <a href="/" class="footer_logo">
+                        <img src="./img/footer-logo.svg" alt="Logo">
+                    </a>
+                    <div class="footer__contact-info">
+                        <p>
+                            <span class="icon-phone"></span>
+                            <a href="tel: +7 (123) 234 45 45">+7 (123) 234 45 45</a>
+                        </p>
+                        <p>
+                            <span class="icon-call-back"></span>
+                            <button class="js-button" data-target="call-back">Обратная связь</button>
+                        </p>
+                        <p>
+                            <span class="icon-place"></span>
+                            <span>Москва, Подольское ш., д.8</span>
+                        </p>
+                    </div>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-fb"></span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-vk"></span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-e-mail"></span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-inst"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__coryright">
+            <div class="container">
+                <p>Space Health | 2020 | Все права защищены</p>
+                <p>
+                    <a href="#">Политика конфиденциальности</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <section class="js-popup popup__call-back popup" data-target="call-back">
+        <div class="popup_wrapper">
+            <button class="js-close close__popup">
+                <span class="icon-close"></span>
+            </button>
+            <form action="#">
+                <h3>Обратный звонок</h3>
+                <p>Укажите номер телефона и мы свяжемся с вами в ближайшее время</p>
+                <label class="input__wrapper js-wrapper">
+                    <span>Ваше имя</span>
+                    <input class="main_input js-input" type="text" placeholder="Имя" value="">
+                </label>
+                <label class="input__wrapper js-wrapper">
+                    <span>Ваш номер телефона</span>
+                    <input class="main_input js-input" type="tel" placeholder="+7 (123) 234 45 45">
+                </label>
+                <button type="submit" class="main-button-color">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</button>
+            </form>
+        </div>
+    </section>
+    <div class="overlay"></div>
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>

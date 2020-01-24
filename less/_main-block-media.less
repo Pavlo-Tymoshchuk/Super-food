@@ -172,14 +172,14 @@
         }
         
         .star__list {
-            margin: 15px 0px;
+            margin: 13px 0px;
         }
         
         .info {
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             font-size: 16px;
             line-height: 22px;
-            max-height: 90px;
+            height: 90px;
         }
     }
     
@@ -286,6 +286,121 @@
             padding: 0px 20px;
         } 
     }
+    
+    /* Catalog */
+    
+    .catalog__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .catalog__wrapper {
+        .catalog__filter {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
+            .mobile-filter {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .sort_type {
+                &:first-child {
+                    margin-bottom: 25px;
+                }
+                
+                .drop_item {
+                    width: 195px;
+                }
+            }
+        }
+        
+        .sort-desktop {
+            display: none;
+        }
+        
+        > .wrapper {
+            flex-direction: column;
+        }
+        
+        .poduct__list_wrapper {
+            width: 100%
+        }
+        
+        .product__item {
+            width: 345px;
+            height: 100%;
+            
+            > .img {
+                display: block;
+                height: 160px;
+            }
+            
+            .info {
+                height: 90px;
+            }
+            
+            .star__list {
+                order: 1;
+            }
+            
+            .name {
+                margin-bottom: 8px;
+            }
+        }
+        
+        
+        .product__description {
+            .wrapper {
+                width: 100%;
+                
+                > p {
+                    display: none;
+                }
+            }
+            
+            .img {
+                display: none;
+            }
+        }
+        
+        .product__description-header {
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 0px;
+            
+            p {
+                display: block;
+                color: #afbbc6;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+        
+        .price__wrapper {
+            flex-direction: row;
+            align-items: center;
+            
+            .price_old {
+                order: 1;
+                margin-left: 14px;
+                margin-top: 0px;
+            }
+        }
+    }
+    
+    .product__sort {
+        justify-content: flex-end;
+    }
+    
+    .catalog__checkbox {
+        display: none;
+    }
+    
+    
 }
 
 @media (max-width: 768px) {
@@ -382,7 +497,7 @@
         margin-bottom: 50px;
     }
     
-    /* Subscription */
+    /* /Subscription */
     
     /* Reviews */
     
@@ -415,6 +530,40 @@
     .main_reviews {
         margin-bottom: 50px;
     }
+    
+    /* /Reviews */
+    
+    /* Catalog */
+    
+    .product__list {
+        margin-right: 0px;
+    }
+    
+    .catalog__wrapper {
+        .product__item {
+            width: 100%;
+            margin-right: 0px;
+        }
+        
+        .catalog__filter {
+            .sort_type {
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        
+        .sort_type {
+            &.number {
+                display: none;
+            }
+        }
+        
+        .catalog__filter {
+            flex-direction: column;
+        }
+    }
+    
 }
 
 @media (max-width: 480px) {

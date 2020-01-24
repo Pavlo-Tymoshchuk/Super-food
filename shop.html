@@ -14,11 +14,43 @@
                 <img src="./img/logo.svg" alt="Logo">
             </a>
             <div class="header__wrapper container">
+                <button class="burger-menu"></button>
                 <ul class="header__list">
                     <li class="header__item header_drop">
                         <button>меню</button>
                         <span class="icon-menu-icon"></span>
-                        <ul class="header-sub__list">
+                        <ul class="header-sub__list header-menu js-popup">
+                            <div class="header-mobile-search">
+                                <label>
+                                    <span class="icon-search"></span>
+                                    <input type="text" class="mobile-search__input">
+                                </label>
+                                <ul class="header-search__list">
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                </ul>
+                            </div>
+                            <button class="close-menu js-close">
+                                <span class="icon-close"></span>
+                            </button>
                             <li class="header-sub__item">
                                 <a href="#" class="header-sub__link">каталог</a>
                             </li>
@@ -46,6 +78,12 @@
                             <li class="header-sub__item">
                                 <a href="#" class="header-sub__link">контакты</a>
                             </li>
+                            <li class="header-sub__item header-mobile-lang">
+                                <a href="#" class="header-sub__link">Рус</a>
+                            </li>
+                            <li class="header-sub__item header-mobile-lang">
+                                <a href="#" class="header-sub__link">Eng</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="header__item">
@@ -63,7 +101,10 @@
                     <li class="header__item header_categories header_drop">
                         <button>все категории</button>
                         <span class="icon-menu-icon"></span>
-                        <ul class="header-sub__list">
+                        <ul class="header-sub__list js-popup">
+                            <button class="close-menu js-close">
+                                <span class="icon-close"></span>
+                            </button>
                             <li class="header-sub__item">
                                 <a href="#" class="header-sub__link">женская линейка</a>
                             </li>
@@ -95,35 +136,52 @@
                     <button class="button-search"><span class="icon-search"></span></button>
                     <input type="text" class="header-search__input">
                     <ul class="header-search__list">
-                        <li class="header-search__item">
+                        <a href="#" class="header-search__item">
                             <img src="./img/product-img-2.png" alt="Product">
                             <p class="name">Super Food 2 (300 г)</p>
                             <span>1 200 руб</span>
-                        </li>
-                        <li class="header-search__item">
+                        </a>
+                        <a href="#" class="header-search__item">
                             <img src="./img/product-img-2.png" alt="Product">
                             <p class="name">Super Food 2 (300 г)</p>
                             <span>1 200 руб</span>
-                        </li>
-                        <li class="header-search__item">
+                        </a>
+                        <a href="#" class="header-search__item">
                             <img src="./img/product-img-2.png" alt="Product">
                             <p class="name">Super Food 2 (300 г)</p>
                             <span>1 200 руб</span>
-                        </li>
-                        <li class="header-search__item">
+                        </a>
+                        <a href="#" class="header-search__item">
                             <img src="./img/product-img-2.png" alt="Product">
                             <p class="name">Super Food 2 (300 г)</p>
                             <span>1 200 руб</span>
-                        </li>
+                        </a>
                     </ul>
                 </div>
+                <button class="header-catalog">
+                    <span class="icon-catalog"></span>
+                </button>
                 <a href="#" class="button-car">
                     <span class="icon-card"></span>
                 </a>
             </div>
         </nav>
+        <!-- <section class="push_notification">
+            <ul class="push_notification__list">
+                <li class="noty_theme__push_notification__item">
+                    <button class="close__popup"><span class="icon-close"></span></button>
+                    <p>Обратный звонок оформлен!</p>
+                    <div class="img">
+                        <img src="./img/green.png" alt="Листок">
+                    </div>
+                    <div class="img img-error">
+                        <img src="./img/autumn.png" alt="Листок">
+                    </div>
+                </li>
+            </ul>
+        </section> -->
     </header>
-<main>
+<main class="catatlog">
 <div class="breadcrumbs container">
     <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
@@ -139,6 +197,78 @@
         <h2 class="main_caption">каталог</h2>
         <div class="wrapper">
             <div class="catalog__filter">
+                <div class="mobile-filter">
+                     <div class="sort_type">
+                        <span>Линейка:</span>
+                        <button class="show_more_sort">
+                            <div>
+                                <p>Вся продукция</p>
+                                <span class="icon-sort-top"></span>
+                            </div>
+                            <span class="icon-menu-icon"></span>
+                        </button>
+                        <div class="drop_list">
+                            <li class="drop_item"> 
+                                <p>Вся продукция</p> 
+                            </li>
+                            <li class="drop_item active">
+                               <p>Акционные товары</p>
+                               <span class="icon-sort-bottom"></span>
+                            </li>
+                            <li class="drop_item">
+                                <p>Женская</p>
+                                <span class="icon-sort-top"></span>
+                            </li>
+                            <li class="drop_item">
+                                <p>Мужские</p>
+                            </li>
+                            <li class="drop_item">
+                                <p>Детская</p>
+                            </li>
+                            <li class="drop_item">
+                                <p>Мороженое</p>
+                                <span class="icon-sort-bottom"></span>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="sort_type">
+                        <span>Сортировать:</span>
+                        <button class="show_more_sort">
+                            <div>
+                                <p>По популярности</p>
+                                <span class="icon-sort-top"></span>
+                            </div>
+                            <span class="icon-menu-icon"></span>
+                        </button>
+                        <div class="drop_list">
+                            <li class="drop_item"> 
+                                <p>По умолчанию</p> 
+                            </li>
+                            <li class="drop_item active">
+                               <p>По популярности</p>
+                               <span class="icon-sort-bottom"></span>
+                            </li>
+                            <li class="drop_item">
+                                <p>По популярности</p>
+                                <span class="icon-sort-top"></span>
+                            </li>
+                            <li class="drop_item">
+                                <p>По названию (А - Я)</p>
+                            </li>
+                            <li class="drop_item">
+                                <p>По названию (Я -А)</p>
+                            </li>
+                            <li class="drop_item">
+                                <p>Цена</p>
+                                <span class="icon-sort-bottom"></span>
+                            </li>
+                            <li class="drop_item">
+                                <p>Цена</p>
+                                <span class="icon-sort-top"></span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
                 <div class="catalog__checkbox">
                     <h4 class="filter_caprion">линейки</h4>
                     <label>
@@ -178,10 +308,13 @@
             </div>
             <div class="poduct__list_wrapper">
                 <div class="product__sort">
-                    <div class="sort_type">
+                    <div class="sort_type sort-desktop">
                         <span>Сортировать:</span>
                         <button class="show_more_sort">
-                            <p>По популярности</p>
+                            <div>
+                                <p>По популярности</p>
+                                <span class="icon-sort-top"></span>
+                            </div>
                             <span class="icon-menu-icon"></span>
                         </button>
                         <div class="drop_list">
@@ -212,16 +345,31 @@
                             </li>
                         </div>
                     </div>
-                    <div class="sort_type">
+                    <div class="sort_type number">
                         <span>Показывать:</span>
                         <button class="show_more_sort">
-                            <p>10</p>
+                            <div>10</div>
                             <span class="icon-menu-icon"></span>
                         </button>
+                        <div class="drop_list">
+                            <li class="drop_item"> 
+                                <p>10</p> 
+                            </li>
+                            <li class="drop_item active">
+                               <p>30</p>
+                            </li>
+                            <li class="drop_item">
+                                <p>100</p>
+                            </li>
+                        </div>
                     </div>
                 </div>
                 <ul class="product__list">
                     <li class="product__item">
+                        <div class="sale-percent">-15%</div>
+                        <div class="img">
+                            <img src="./img/product-img-1.png" alt="Продукт">
+                        </div>
                         <div class="product__description-header">
                             <h4 class="name">Super Food 1 <span class="product_weight">(300 г)</span></h4>
                             <ul class="star__list">
@@ -241,6 +389,7 @@
                                     <span class="icon-star"></span>
                                 </li>
                             </ul>
+                            <p>Природный энергетик</p>
                         </div>
                         <div class="product__description">
                             <div class="img">
@@ -253,6 +402,7 @@
                                 </div>
                                 <div class="procuct__item-footer">
                                     <div class="price__wrapper">
+                                        <p class="price_old">1 500 руб</p>
                                         <p class="price">1 200 руб</p>
                                     </div>
                                     <button class="product-add-to-card">
@@ -263,6 +413,9 @@
                         </div>
                     </li>
                     <li class="product__item">
+                        <div class="img">
+                            <img src="./img/product-img-1.png" alt="Продукт">
+                        </div>
                         <div class="product__description-header">
                             <h4 class="name">Super Food 1 <span class="product_weight">(300 г)</span></h4>
                             <ul class="star__list">
@@ -282,6 +435,7 @@
                                     <span class="icon-star"></span>
                                 </li>
                             </ul>
+                            <p>Природный энергетик</p>
                         </div>
                         <div class="product__description">
                             <div class="img">
@@ -305,6 +459,9 @@
                         </div>
                     </li>
                     <li class="product__item">
+                        <div class="img">
+                            <img src="./img/product-img-1.png" alt="Продукт">
+                        </div>
                         <div class="product__description-header">
                             <h4 class="name">Super Food 1 <span class="product_weight">(300 г)</span></h4>
                             <ul class="star__list">
@@ -324,6 +481,7 @@
                                     <span class="icon-star"></span>
                                 </li>
                             </ul>
+                            <p>Природный энергетик</p>
                         </div>
                         <div class="product__description">
                             <div class="img">
@@ -347,6 +505,9 @@
                         </div>
                     </li>
                     <li class="product__item">
+                        <div class="img">
+                            <img src="./img/product-img-1.png" alt="Продукт">
+                        </div>
                         <div class="product__description-header">
                             <h4 class="name">Super Food 1 <span class="product_weight">(300 г)</span></h4>
                             <ul class="star__list">
@@ -366,6 +527,7 @@
                                     <span class="icon-star"></span>
                                 </li>
                             </ul>
+                            <p>Природный энергетик</p>
                         </div>
                         <div class="product__description">
                             <div class="img">
@@ -388,6 +550,37 @@
                         </div>
                     </li>
                 </ul>
+                <div class="pagination__wrapper">
+                    <ul class="pagination__list">
+                        <li class="pagination__item prev">
+                            <button class="pagination__button prev"> < </button>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="pagination__item active">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="pagination__item dots">
+                            <a href="#">...</a>
+                        </li>
+                        <li class="pagination__item all">
+                            <a href="#">8</a>
+                        </li>
+                        <li class="pagination__item next">
+                            <button class="pagination__button next"> > </button>
+                        </li>
+                    </ul>
+                    <div class="pagination-info">
+                        <p>Показано с <span class="start">1</span> по <span class="end">10</span> из <span class="all-item">76</span> (<span class="all-page">8 страниц</span>)</p>
+                    </div>
+                </div>
+                <div class="catalog__button">
+                    <button class="main_button">показать больше</button>
+                </div>
             </div>
         </div>
     </div>
@@ -396,7 +589,7 @@
     <footer class="footer">
         <div class="footer__wrapper">
             <div class="container">
-                <a href="/">
+                <a href="/" class="footer_logo">
                     <img src="./img/footer-logo.svg" alt="Logo">
                 </a>
                 <div class="footer__contact-info">
@@ -406,7 +599,7 @@
                     </p>
                     <p>
                         <span class="icon-call-back"></span>
-                        <a href="#">Обратная связь</a>
+                        <button class="js-button" data-target="call-back">Обратная связь</button>
                     </p>
                     <p>
                         <span class="icon-place"></span>
@@ -442,20 +635,39 @@
                         <a href="#">контакты</a>
                     </li>
                 </ul>
-                <ul class="footer__social-list">
-                    <li class="footer__social-item">
-                        <a href="#"><span class="icon-fb"></span></a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#"><span class="icon-vk"></span></a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#"><span class="icon-e-mail"></span></a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#"><span class="icon-inst"></span></a>
-                    </li>
-                </ul>
+                <div class="footer-mobile__info">
+                    <a href="/" class="footer_logo">
+                        <img src="./img/footer-logo.svg" alt="Logo">
+                    </a>
+                    <div class="footer__contact-info">
+                        <p>
+                            <span class="icon-phone"></span>
+                            <a href="tel: +7 (123) 234 45 45">+7 (123) 234 45 45</a>
+                        </p>
+                        <p>
+                            <span class="icon-call-back"></span>
+                            <button class="js-button" data-target="call-back">Обратная связь</button>
+                        </p>
+                        <p>
+                            <span class="icon-place"></span>
+                            <span>Москва, Подольское ш., д.8</span>
+                        </p>
+                    </div>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-fb"></span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-vk"></span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-e-mail"></span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-inst"></span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="footer__coryright">
@@ -464,12 +676,30 @@
                 <p>
                     <a href="#">Политика конфиденциальности</a>
                 </p>
-                <p>
-                    <a href="#">Обратная связь</a>
-                </p>
             </div>
         </div>
     </footer>
+    <section class="js-popup popup__call-back popup" data-target="call-back">
+        <div class="popup_wrapper">
+            <button class="js-close close__popup">
+                <span class="icon-close"></span>
+            </button>
+            <form action="#">
+                <h3>Обратный звонок</h3>
+                <p>Укажите номер телефона и мы свяжемся с вами в ближайшее время</p>
+                <label class="input__wrapper js-wrapper">
+                    <span>Ваше имя</span>
+                    <input class="main_input js-input" type="text" placeholder="Имя" value="">
+                </label>
+                <label class="input__wrapper js-wrapper">
+                    <span>Ваш номер телефона</span>
+                    <input class="main_input js-input" type="tel" placeholder="+7 (123) 234 45 45">
+                </label>
+                <button type="submit" class="main-button-color">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</button>
+            </form>
+        </div>
+    </section>
+    <div class="overlay"></div>
     <script src="./js/main.js"></script>
 </body>
 </html>

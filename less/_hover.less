@@ -1,6 +1,6 @@
 
 @media (min-width: 1160px) {
-    /* Header hover */
+    
     
     .header__link,
     .header-lang___link,
@@ -37,6 +37,10 @@
             opacity: 1;
         }
     }
+    
+    /* /Header hover */
+    
+    /* General */
     
     .main_button {
         transition: background-color .4s, border-color .4s, color .4s;
@@ -78,6 +82,10 @@
         }
     }
     
+    /* /General */
+    
+    /* Product */
+    
     .product-add-to-card {
         transition: background-color .4s;
         
@@ -115,6 +123,10 @@
                     color: #000;
                 }
             }
+            
+            p {
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            }
         }
     }
     
@@ -148,6 +160,23 @@
         }
     }
     
+    .product-delivery {
+        transition: text-shadow .4s;
+        &:hover {
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+    }
+    
+    .product-tabs__item {
+        transition: color .4s;
+        
+        &:hover {
+            color: #55606a;
+        }
+    }
+    
+    /* /Product */
+    
     .more_info {
         transition: color .4s;
         
@@ -173,4 +202,66 @@
             }
         }
     }
+    
+    /* Popup */
+    
+    .close__popup {
+        &:hover {
+            span {
+                &::before {
+                    color: #1553c6;
+                }
+            }
+        }
+    }
+    
+    /* /Popup */
+    
+    /* Footer */
+    
+    .footer__contact-info {
+        a,
+        button {
+            &:hover {
+                color: #ccc;
+            }
+        }
+    }
+    
+    .footer__social-item {
+        &:hover {
+           
+            span {
+                &::before {
+                    color: #0d990d;
+                }
+                
+            }
+            
+            &:active {
+                &::before {
+                    color: #0a750a;
+                }
+                
+            }
+        }
+    }
+    
+    /* /Footer */
+    
+    /* Pagination */
+    
+    .pagination__item {
+        &:hover {
+            color: #000;
+            border-color: #000;
+            
+            &.active {
+                color: #55606a;
+                border-color: #55606a;
+            }
+        }
+    }
+    
+    /* /Pagination */
 }
