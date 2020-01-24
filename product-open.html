@@ -287,16 +287,21 @@
         </section>
         <section class="product-tabs">
             <div class="product-tabs container">
-                <ul class="product-tabs__list">
-                    <li class="product-tabs__item active">Описание</li>
-                    <li class="product-tabs__item">Состав</li>
-                    <li class="product-tabs__item">Пищевая ценность</li>
-                    <li class="product-tabs__item">Применение</li>
-                    <li class="product-tabs__item">Условия хранения</li>
-                    <li class="product-tabs__item">Меры предосторожности</li>
-                </ul>
+                <div class="wrapper">
+                    <ul class="product-tabs__list">
+                        <li class="product-tabs__item active">Описание</li>
+                        <li class="product-tabs__item">Состав</li>
+                        <li class="product-tabs__item">Пищевая ценность</li>
+                        <li class="product-tabs__item">Применение</li>
+                        <li class="product-tabs__item">Условия хранения</li>
+                        <li class="product-tabs__item">Меры предосторожности</li>
+                    </ul>
+                </div>
                 <div class="product-tabs__content">
-                    <p>Гранола - это невероятно вкусный, полезный и питательный завтрак, который состоит из запеченной овсяной крупы, а также из орехов, сухофруктов, меда и других ингредиентов. Основа гранолы - овсяная крупа, которую запекают в духовке для получения хрустящей корочки. Овсянка способствует хорошему пищеварению и питает энергией. Мед сильнейшее иммунозащитное средство, и хорошо поднимает настроение. Орехи, сухофрукты и семечки очень питательны, содержат в себе витамины, микро- и макроэлементы, которые способствуют мозговой активности и поддержанию тонуса.Преимущество гранолы в том, что она насыщена клетчаткой и имеет полностью натуральный состав (без ароматизаторов и усилителей вкуса). Ее можно употреблять не только на завтрак, но и на протяжении всего дня.</p>
+                    <div class="wrapper">
+                        <p>Гранола - это невероятно вкусный, полезный и питательный завтрак, который состоит из запеченной овсяной крупы, а также из орехов, сухофруктов, меда и других ингредиентов. Основа гранолы - овсяная крупа, которую запекают в духовке для получения хрустящей корочки. Овсянка способствует хорошему пищеварению и питает энергией. Мед сильнейшее иммунозащитное средство, и хорошо поднимает настроение. Орехи, сухофрукты и семечки очень питательны, содержат в себе витамины, микро- и макроэлементы, которые способствуют мозговой активности и поддержанию тонуса.Преимущество гранолы в том, что она насыщена клетчаткой и имеет полностью натуральный состав (без ароматизаторов и усилителей вкуса). Ее можно употреблять не только на завтрак, но и на протяжении всего дня.</p>
+                    </div>
+                    <button class="more_info"></button>
                 </div>
             </div>
         </section>
@@ -348,10 +353,10 @@
             </div>
         </section>
         <section class="product-slider">
-            <div class="product-slider__wrapper container">
-                <ul class="product__list">
-                    <span class="mobile-item"></span>
-                    <li class="product__item">
+            <div class="product-slider__wrapper container slider-infinity">
+                <h2 class="main_caption">С этим товаром также покупают</h2>
+                <ul class="product__list js-slider-list">
+                    <li class="product__item js-slider-item-infinity show" data-index="1">
                         <a href="#" class="img">
                             <img src="./img/product-img-1.png" alt="Продукт">
                         </a>
@@ -390,7 +395,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="product__item">
+                    <li class="product__item js-slider-item-infinity" data-index="2">
                         <a href="#" class="img">
                             <img src="./img/product-img-2.png" alt="Продукт">
                         </a>
@@ -429,7 +434,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="product__item">
+                    <li class="product__item js-slider-item-infinity" data-index="3">
                         <a href="#" class="img">
                             <img src="./img/product-img-3.png" alt="Продукт">
                         </a>
@@ -468,7 +473,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="product__item">
+                    <li class="product__item js-slider-item-infinity" data-index="4">
                         <a href="#" class="img">
                             <img src="./img/product-img-4.png" alt="Продукт">
                         </a>
@@ -507,10 +512,9 @@
                             </div>
                         </div>
                     </li>
-                    <span class="mobile-item"></span>
                 </ul>
-                <div class="number__button">
-                    <button class="button-prev no-active button-arrow">
+                <div class="number__button js-arrows-infinity">
+                    <button class="prev button-arrow">
                         <span class="icon-prev"></span>
                     </button>
                     <ul class="number-slider">
@@ -518,7 +522,183 @@
                         <li>/</li>
                         <li class="all-slider">3</li>
                     </ul>
-                    <button class="button-next button-arrow">
+                    <button class="next button-arrow">
+                        <span class="icon-next"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="product-slider">
+            <div class="product-slider__wrapper container slider-infinity">
+                <h2 class="main_caption">похожие товары</h2>
+                <ul class="product__list js-slider-list">
+                    <li class="product__item js-slider-item-infinity show" data-index="1">
+                        <a href="#" class="img">
+                            <img src="./img/product-img-1.png" alt="Продукт">
+                        </a>
+                        <div class="product__description">
+                            <a href="#" class="name">Super Food 1 <span class="product_weight">(300 г)</span></a>
+                            <div class="star-sub-info__wrapper">
+                                <p>Природный энергетик</p>
+                                <ul class="star__list">
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item active">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <p><span>Состав:</span>пшеница нешлифованная твёрдых сортов, с сохранением зародыша зерна; овёс с сохранённой оболочкой; расторопша; лён; кунжут.</p>
+                            </div>
+                            <div class="procuct__item-footer">
+                                <div class="price__wrapper">
+                                    <p class="price">1 200 <span>руб</span></p>
+                                </div>
+                                <button class="product-add-to-card">
+                                    <span class="icon-card"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product__item js-slider-item-infinity" data-index="2">
+                        <a href="#" class="img">
+                            <img src="./img/product-img-2.png" alt="Продукт">
+                        </a>
+                        <div class="product__description">
+                            <a href="#" class="name">Super Food 1 <span class="product_weight">(300 г)</span></a>
+                            <div class="star-sub-info__wrapper">
+                                <p>Природный энергетик</p>
+                                <ul class="star__list">
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item active">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <p><span>Состав:</span>пшеница нешлифованная твёрдых сортов, с сохранением зародыша зерна; овёс с сохранённой оболочкой; расторопша; лён; кунжут.</p>
+                            </div>
+                            <div class="procuct__item-footer">
+                                <div class="price__wrapper">
+                                    <p class="price">1 200 <span>руб</span></p>
+                                </div>
+                                <button class="product-add-to-card">
+                                    <span class="icon-card"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product__item js-slider-item-infinity" data-index="3">
+                        <a href="#" class="img">
+                            <img src="./img/product-img-3.png" alt="Продукт">
+                        </a>
+                        <div class="product__description">
+                            <a href="#" class="name">Super Food 1 <span class="product_weight">(300 г)</span></a>
+                            <div class="star-sub-info__wrapper">
+                                <p>Природный энергетик</p>
+                                <ul class="star__list">
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item active">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <p><span>Состав:</span>пшеница нешлифованная твёрдых сортов, с сохранением зародыша зерна; овёс с сохранённой оболочкой; расторопша; лён; кунжут.</p>
+                            </div>
+                            <div class="procuct__item-footer">
+                                <div class="price__wrapper">
+                                    <p class="price">1 200 <span>руб</span></p>
+                                </div>
+                                <button class="product-add-to-card">
+                                    <span class="icon-card"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product__item js-slider-item-infinity" data-index="4">
+                        <a href="#" class="img">
+                            <img src="./img/product-img-4.png" alt="Продукт">
+                        </a>
+                        <div class="product__description">
+                            <a href="#" class="name">Super Food 1 <span class="product_weight">(300 г)</span></a>
+                            <div class="star-sub-info__wrapper">
+                                <p>Природный энергетик</p>
+                                <ul class="star__list">
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item active">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="star__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <p><span>Состав:</span>пшеница нешлифованная твёрдых сортов, с сохранением зародыша зерна; овёс с сохранённой оболочкой; расторопша; лён; кунжут.</p>
+                            </div>
+                            <div class="procuct__item-footer">
+                                <div class="price__wrapper">
+                                    <p class="price">1 200 <span>руб</span></p>
+                                </div>
+                                <button class="product-add-to-card">
+                                    <span class="icon-card"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="number__button js-arrows-infinity">
+                    <button class="prev button-arrow">
+                        <span class="icon-prev"></span>
+                    </button>
+                    <ul class="number-slider">
+                        <li class="current">1</li>
+                        <li>/</li>
+                        <li class="all-slider">3</li>
+                    </ul>
+                    <button class="next button-arrow">
                         <span class="icon-next"></span>
                     </button>
                 </div>
@@ -638,8 +818,97 @@
             </form>
         </div>
     </section>
+    <section class="js-popup popup__add-reviews popup" data-target="reviews">
+        <div class="review_form__wrapper">
+            <button class="js-close close__popup">
+                <span class="icon-close"></span>
+            </button>
+            <h5>Оцените Super Food</h5>
+            <form action="#">
+                <ul class="star__list">
+                    <li class="star__item" data-target="1">
+                        <span class="icon-star"></span>
+                    </li>
+                    <li class="star__item" data-target="2">
+                        <span class="icon-star"></span>
+                    </li>
+                    <li class="star__item" data-target="3">
+                        <span class="icon-star"></span>
+                    </li>
+                    <li class="star__item" data-target="4">
+                        <span class="icon-star"></span>
+                    </li>
+                    <li class="star__item" data-target="5">
+                        <span class="icon-star"></span>
+                    </li>
+                </ul>
+                <input type="hidden" class="stars__input" value="5">
+                <div class="wrapper">
+                    <div class="wrapper-photo">
+                        <label class="add-photo">
+                            <input class="file_input" type="file" name="text_review_file" onchange="previewFile()" accept=".jpg, .jpeg, .png, .svg">
+                            <img src="" alt="Фото">
+                            <span class="custome_button">
+                                <span class="hover"></span>
+                            </span>
+                        </label>
+                        <span role="button" class="delete-photo"></span>
+                    </div>
+                    <fieldset>
+                        <label class="input__wrapper js-wrapper">
+                            <span>Ваш E-mail*</span>
+                            <input class="main_input js-input" type="email" placeholder="ivanov.ivan@gmail.com">
+                        </label>
+                        <label class="input__wrapper js-wrapper">
+                            <span>Ваше имя*</span>
+                            <input class="main_input js-input" type="text" placeholder="Иван" value="">
+                        </label>
+                    </fieldset>
+                </div>
+                <label class="input__wrapper js-wrapper">
+                    <span>Выберите Super Food, для которого хотите оставить  отзыв</span>
+                    <input class="main_input js-input" type="text" placeholder="Super Food">
+                </label>
+                <label class="input__wrapper js-wrapper">
+                    <span>Ваш отзыв*</span>
+                    <textarea class="main_input js-input" type="text" placeholder="Напишите отзыв ..."></textarea>
+                </label>
+                <button type="submit" class="main_button form">ОПУБЛИКОВАТЬ ОТЗЫВ</button>
+            </form>
+        </div>
+    </section>
     <div class="overlay"></div>
     <script src="./js/main.js"></script>
-    
+    <script>
+        function previewFile() {
+            let preview = document.querySelector('.add-photo img');
+            let file = document.querySelector('.file_input').files[0];
+            
+            if(file.size > 3000000){
+                noty('error', "Размер файла превышает допустимый размер!");
+                file.value = null;
+                return;
+            };
+            
+            let reader = new FileReader();
+            reader.onloadend = function () {
+                let src = reader.result;
+                preview.setAttribute("src", src);
+                
+                preview.closest('.add-photo').classList.add('active');
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "";
+            }
+            
+            document.querySelector('.delete-photo').addEventListener('click', function(){
+                preview.closest('.add-photo').classList.remove('active');
+                document.querySelector('.file_input').value = null;
+            });
+        }
+    </script>
 </body>
 </html>

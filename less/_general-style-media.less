@@ -21,6 +21,51 @@
     html.overflow {
         margin-right: 0px;
     }
+    
+    /* Reviews */
+    
+    .review_form__wrapper {
+        width: 700px;
+        padding: 40px 30px 30px;
+    }
+    
+    .review_form__wrapper {
+        .add-photo {
+            height: 100px;
+            
+            .custome_button {
+                width: 100px;
+                height: 100px;
+                
+                .hover {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+        
+        .wrapper-photo {
+            width: calc(20% - 30px);
+        }
+        
+        .wrapper {
+            margin-bottom: 15px;
+            
+            fieldset {
+                width: 80%;
+            }
+        }
+        
+        .main_button {
+            margin-top: 30px;
+        }
+    }
+    
+    .input__wrapper {
+        margin-bottom: 15px;
+    }
+    
+    /* /Reviews */
 }
 
 @media (max-width: 768px) {
@@ -31,5 +76,29 @@
     .main_caption {
         font-size: 20px;
         line-height: 27px;
+    }
+    
+    /* Reviews */
+    
+    .add_reviews__item {
+        .reviews_img {
+            display: none;
+        }
+        
+        .reviews__info {
+            width: 100%;
+        }
+    }
+    
+    .reviews__info-header {
+        display: flex;
+        justify-content: space-between;
+        
+        .reviews-mobile_img {
+            display: block;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+        }
     }
 }

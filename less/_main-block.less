@@ -1032,6 +1032,7 @@ main {
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
+    z-index: 2;
     
     .prev {
         transform: rotate(90deg);
@@ -1084,6 +1085,7 @@ main {
     
     img {
         height: 100%;
+        object-fit: contain;
     }
     
     &.show {
@@ -1336,6 +1338,7 @@ main {
     
     &.active {
         color: #55606a;
+        font-weight: 700;
         
         &::before {
             content: "";
@@ -1352,12 +1355,48 @@ main {
 .product-tabs__content {
     font-size: 16px;
     line-height: 24px;
+    
+    .more_info {
+        display: none;
+    }
+}
+
+.product-slider {
+    margin-bottom: 110px;
+    
+    .product__list {
+        position: relative;
+        height: 245px;
+        margin-bottom: 25px;
+        margin-top: 30px;
+    }
+    
+    .product__item {
+        position: absolute;
+        transform: translateX(-580px);
+        opacity: 0;
+        transition: transform .6s, opacity .4s, box-shadow .4s;
+        
+        &.show {
+            transform: translateX(0px);
+            opacity: 1;
+            
+            + .product__item {
+                 transform: translateX(590px);
+                 opacity: 1;
+                 
+                 ~ .product__item {
+                     transform: translateX(1180px);
+                     opacity: 0;
+                 }
+            }
+        }
+    }
 }
 
 /* /Product open */
 
 /* Add reviews */
-
 
 .add_reviews__wrapper {
     .main_button {
@@ -1449,3 +1488,6 @@ main {
         margin: 22px 0px 18px;
     }
 }
+
+
+/* /Add reviews */

@@ -74,7 +74,7 @@ body {
     font-weight: 700;
     width: 100%;
     max-width: 300px;
-    height: 50px;
+    height: 52px;
     line-height: 50px;
     background-color: #0d990d;
     color: #fff;
@@ -88,7 +88,7 @@ body {
     max-width: 300px;
     width: 100%;
     border: 2px solid #55606a;
-    height: 48px;
+    height: 52px;
     color: #55606a;
     font-size: 14px;
     font-weight: 700;
@@ -110,6 +110,15 @@ body {
 
 .star__list {
     display: flex;
+    
+    .star__item {
+        margin-right: 2px;
+        
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    
     
     span {
         &:before {
@@ -181,10 +190,14 @@ body {
             color: #FF4800;
         }
     }
+    
+    span {
+        font-size: 14px;
+    }
 }
 
 .main_input {
-    height: 50px;
+    height: 52px;
     padding-left: 20px;
     border-radius: 7px;
     background: #fff;
@@ -320,4 +333,292 @@ body {
 .pagination-info {
     color: #98a1a9;
     font-size: 14px;
+}
+
+
+/* Number button */
+
+.number__button {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    
+    .button-arrow {
+        transition: transform .4s;
+        
+        &.disable {
+            transform: scale(0.92);
+            
+            span {
+                &::before {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+    
+    .number-slider {
+        display: flex;
+        align-items: flex-end;
+        margin: 0px 30px;
+        font-size: 16px;
+        
+        li:nth-child(2) {
+            padding: 0px 4px 0px 6px;
+        }
+        
+        .current {
+            font-size: 28px;
+            line-height: 28px;
+        }
+    }
+}
+
+/* /Number button */
+
+
+/* Active Stars */
+
+.review_form__wrapper{
+    .stars__list {
+        &.checked {
+            span {
+                &::before {
+                    content: "\e905";
+                    color: #d00019;
+                }
+            }
+            
+            &:hover {
+                span {
+                    &::before {
+                        content: "\e906";
+                        color: #d00019;
+                    }
+                }
+            }
+        }
+    }
+    
+    .star__item {
+        cursor: pointer;
+        padding-right: 20px;
+        
+        &:last-child {
+            padding-right: 0px;
+        }
+        
+        &.active {
+            ~ .star__item span:before  {
+                content: "\e905";
+                color: #0d990d;
+            }
+        }
+        
+        &:hover {
+            ~ .star__item span:before {
+                content: "\e905";
+                color: #0d990d;
+            }
+        }
+    }
+}
+
+/* /Active Stars */
+
+/* Reviews Form */
+
+.review_form__wrapper {
+    padding: 70px 60px 30px;
+    width: 840px;
+    background-color: #fff;
+    
+    fieldset {
+        border: none;
+    }
+    
+    h5 {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+    
+    .star__list {
+        margin: 35px 0px 40px;
+        justify-content: center;
+    }
+    
+    .star__item {
+        
+        span {
+            font-size: 34px;
+        }
+    }
+    
+    .wrapper-photo {
+        display: flex;
+        position: relative;
+        width: calc(25% - 35px);
+        margin-right: 55px;
+    }
+    
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        
+        .input__wrapper {
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        
+        fieldset {
+            width: calc(75% - 15px);
+        }
+        
+        .delete-photo {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            padding: 5px;
+            top: 0px;
+            right: 0px;
+            cursor: pointer;
+            transform: rotate(45deg);
+            opacity: 0;
+            z-index: -1;
+            transition: opacity .4s;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: #e72626;
+                transition: background-color .4s;
+                transform: translateX(-6px);
+            }
+            
+            &::after {
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 100%;
+                background-color: #e72626;
+                transform: translateX(0px) translateY(-6px);
+                transition: background-color .4s;
+            }
+        }
+    }
+    
+    .add-photo {
+        position: relative;
+        height: 160px;
+        border-radius: 50%;
+        border: 1px solid #EAEEF1;
+        
+        &.active {
+            img {
+                opacity: 1;
+                z-index: 1;
+            }
+            
+            .custome_button {
+                opacity: 0;
+                z-index: -1;
+            }
+            
+            + .delete-photo {
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+        
+        img {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity .4s;
+        }
+
+        .file_input {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+            z-index: -1;
+        }
+        
+        .custome_button {
+            display: inline-block;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background-color: #EAEEF1;
+            cursor: pointer;
+            transition: opacity .4s;
+            
+            &:hover {
+                .hover {
+                    opacity: 1;
+                }
+            }
+            
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 55px;
+                height: 50px;
+                transform: translate(-50%, -50%);
+                background: url(../img/cat-form.svg) no-repeat center;
+                background-size: contain;
+            }
+            
+            .hover {
+                opacity: 0;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+                background-color: #C4CED6;
+                transition: opacity .4s;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 48px;
+                    height: 48px;
+                    transform: translate(-50%, -50%);
+                    background: url(../img/file.svg) no-repeat center;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+    
+    .input__wrapper {
+        textarea {
+            height: 155px;
+            padding-top: 15px;
+            resize: none;
+        }
+    }
+    
+    .main_button {
+        margin: 50px auto 0px;
+    }
 }
