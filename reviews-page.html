@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super-food</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <a href="#" class="header-logo">
+                <img src="./img/logo.svg" alt="Logo">
+            </a>
+            <div class="header__wrapper container">
+                <button class="burger-menu"></button>
+                <ul class="header__list">
+                    <li class="header__item header_drop">
+                        <button>меню</button>
+                        <span class="icon-menu-icon"></span>
+                        <ul class="header-sub__list header-menu js-popup">
+                            <div class="header-mobile-search">
+                                <label>
+                                    <span class="icon-search"></span>
+                                    <input type="text" class="mobile-search__input">
+                                </label>
+                                <ul class="header-search__list">
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                    <a href="#" class="header-search__item">
+                                        <img src="./img/product-img-2.png" alt="Product">
+                                        <p class="name">Super Food 2 (300 г)</p>
+                                        <span>1 200 руб</span>
+                                    </a>
+                                </ul>
+                            </div>
+                            <button class="close-menu js-close">
+                                <span class="icon-close"></span>
+                            </button>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">каталог</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">блог</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">доставка</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">о компании</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">фотогалерея</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">документация</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">рецепты</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">отзывы</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">контакты</a>
+                            </li>
+                            <li class="header-sub__item header-mobile-lang">
+                                <a href="#" class="header-sub__link">Рус</a>
+                            </li>
+                            <li class="header-sub__item header-mobile-lang">
+                                <a href="#" class="header-sub__link">Eng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">женская линейка</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">мужская линейка</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">детская линейка</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">мороженое</a>
+                    </li>
+                    <li class="header__item header_categories header_drop">
+                        <button>все категории</button>
+                        <span class="icon-menu-icon"></span>
+                        <ul class="header-sub__list js-popup">
+                            <button class="close-menu js-close">
+                                <span class="icon-close"></span>
+                            </button>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">женская линейка</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">мороженое</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">мужская линейка</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">доп катерория</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">детская линейка</a>
+                            </li>
+                            <li class="header-sub__item">
+                                <a href="#" class="header-sub__link">доп категория 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="header-lang__list">
+                    <li class="header-lang__item"><a href="#" class="header-lang___link">Рус</a></li>
+                    <li class="header-lang__item"><a href="#" class="header-lang___link">Eng</a></li>
+                </ul>
+            </div>
+            <div class="header-buttons">
+                <div class="header-search">
+                    <button class="button-search"><span class="icon-search"></span></button>
+                    <input type="text" class="header-search__input">
+                    <ul class="header-search__list">
+                        <a href="#" class="header-search__item">
+                            <img src="./img/product-img-2.png" alt="Product">
+                            <p class="name">Super Food 2 (300 г)</p>
+                            <span>1 200 руб</span>
+                        </a>
+                        <a href="#" class="header-search__item">
+                            <img src="./img/product-img-2.png" alt="Product">
+                            <p class="name">Super Food 2 (300 г)</p>
+                            <span>1 200 руб</span>
+                        </a>
+                        <a href="#" class="header-search__item">
+                            <img src="./img/product-img-2.png" alt="Product">
+                            <p class="name">Super Food 2 (300 г)</p>
+                            <span>1 200 руб</span>
+                        </a>
+                        <a href="#" class="header-search__item">
+                            <img src="./img/product-img-2.png" alt="Product">
+                            <p class="name">Super Food 2 (300 г)</p>
+                            <span>1 200 руб</span>
+                        </a>
+                    </ul>
+                </div>
+                <button class="header-catalog">
+                    <span class="icon-catalog"></span>
+                </button>
+                <a href="#" class="button-car">
+                    <span class="icon-card"></span>
+                </a>
+            </div>
+        </nav>
+        <!-- <section class="push_notification">
+            <ul class="push_notification__list">
+                <li class="noty_theme__push_notification__item">
+                    <button class="close__popup"><span class="icon-close"></span></button>
+                    <p>Обратный звонок оформлен!</p>
+                    <div class="img">
+                        <img src="./img/green.png" alt="Листок">
+                    </div>
+                    <div class="img img-error">
+                        <img src="./img/autumn.png" alt="Листок">
+                    </div>
+                </li>
+            </ul>
+        </section> -->
+    </header>
+    <main>
+        <div class="breadcrumbs container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item active">
+                    <a href="#">Отзывы</a>
+                </li>
+            </ul>
+        </div>
+        <section class="reviews">
+            <div class="add_reviews__wrapper container">
+                <h2 class="main_caption">Отзывы наших покупателей</h2>
+                <button class="main_button form reviews_button"></button>
+                <div class="review_form__wrapper">
+                    <h5>Оцените Super Food</h5>
+                    <form action="#">
+                        <ul class="star__list">
+                            <li class="star__item" data-target="1">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="star__item" data-target="2">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="star__item" data-target="3">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="star__item" data-target="4">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="star__item" data-target="5">
+                                <span class="icon-star"></span>
+                            </li>
+                        </ul>
+                        <input type="hidden" class="stars__input" value="5">
+                        <div class="wrapper">
+                            <div class="wrapper-photo">
+                                <label class="add-photo">
+                                    <input class="file_input" type="file" name="text_review_file" onchange="previewFile()" accept=".jpg, .jpeg, .png, .svg">
+                                    <img src="" alt="Фото">
+                                    <span class="custome_button">
+                                        <span class="hover"></span>
+                                    </span>
+                                </label>
+                                <span role="button" class="delete-photo"></span>
+                            </div>
+                            <fieldset>
+                                <label class="input__wrapper js-wrapper">
+                                    <span>Ваш E-mail*</span>
+                                    <input class="main_input js-input" type="email" placeholder="ivanov.ivan@gmail.com">
+                                </label>
+                                <label class="input__wrapper js-wrapper">
+                                    <span>Ваше имя*</span>
+                                    <input class="main_input js-input" type="text" placeholder="Иван" value="">
+                                </label>
+                            </fieldset>
+                        </div>
+                        <label class="input__wrapper js-wrapper">
+                            <span>Выберите Super Food, для которого хотите оставить  отзыв</span>
+                            <input class="main_input js-input" type="text" placeholder="Super Food">
+                        </label>
+                        <label class="input__wrapper js-wrapper">
+                            <span>Ваш отзыв*</span>
+                            <textarea class="main_input js-input" type="text" placeholder="Напишите отзыв ..."></textarea>
+                        </label>
+                        <button type="submit" class="main_button form">ОПУБЛИКОВАТЬ ОТЗЫВ</button>
+                    </form>
+                </div>
+                <ul class="add_reviews__list">
+                    <li class="add_reviews__item js-item">
+                        <div class="reviews_img">
+                            <img src="./img/reviews-img-1.png" alt="Фото">
+                        </div>
+                        <div class="reviews__info">
+                            <div class="reviews__info-header">
+                                <div class="reviews-mobile_img">
+                                    <img src="./img/reviews-img-1.png" alt="Фото">
+                                </div>
+                                <div class="wrapper">
+                                    <div>
+                                        <p class="reviews-name">Татьяна</p>
+                                        <p class="reviews-data">11.12.2019</p>
+                                    </div>
+                                    <ul class="star__list">
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item active">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём &gt;Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём &gt;Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём</p>
+                            </div>
+                            <button class="more_info show"></button>
+                        </div>
+                    </li>
+                    <li class="add_reviews__item js-item">
+                        <div class="reviews_img">
+                            <img src="./img/reviews-img-1.png" alt="Фото">
+                        </div>
+                        <div class="reviews__info">
+                            <div class="reviews__info-header">
+                                <div class="reviews-mobile_img">
+                                    <img src="./img/reviews-img-1.png" alt="Фото">
+                                </div>
+                                <div class="wrapper">
+                                    <div>
+                                        <p class="reviews-name">Татьяна</p>
+                                        <p class="reviews-data">11.12.2019</p>
+                                    </div>
+                                    <ul class="star__list">
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item active">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём &gt;Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём &gt;Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём</p>
+                            </div>
+                            <button class="more_info show"></button>
+                        </div>
+                    </li>
+                    <li class="add_reviews__item js-item">
+                        <div class="reviews_img">
+                            <img src="./img/reviews-img-1.png" alt="Фото">
+                        </div>
+                        <div class="reviews__info">
+                            <div class="reviews__info-header">
+                                <div class="reviews-mobile_img">
+                                    <img src="./img/reviews-img-1.png" alt="Фото">
+                                </div>
+                                <div class="wrapper">
+                                    <div>
+                                        <p class="reviews-name">Татьяна</p>
+                                        <p class="reviews-data">11.12.2019</p>
+                                    </div>
+                                    <ul class="star__list">
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item active">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                        <li class="star__item">
+                                            <span class="icon-star"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём &gt;Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём &gt;Имеется спорная точка зрения, гласящая примерно следующее: независимые государства объективно рассмотрены соответствующими инстанциями. В целом, конечно, перспективное планирование, в своём</p>
+                            </div>
+                            <button class="more_info show"></button>
+                        </div>
+                    </li>
+                </ul>
+                <button class="main_button">смотреть все товары</button>
+            </div>
+        </section>
+        <section class="subscription" style="background-image:url(./img/subscription-bg.png)">
+            <div class="subscription__wrapper container">
+                <h2 class="main_caption">подписка</h2>
+                <p>Подписывайся на наши обновления - получай самую свежую информацию, полезные советы и уникальные рецепты!</p>
+                <form action="#" class="subscription_form">
+                    <input class="main_input" type="text" placeholder="Введи свой email">
+                    <button type="submit" class="main_button form">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="container">
+                <a href="/" class="footer_logo">
+                    <img src="./img/footer-logo.svg" alt="Logo">
+                </a>
+                <div class="footer__contact-info">
+                    <p>
+                        <span class="icon-phone"></span>
+                        <a href="tel: +7 (123) 234 45 45">+7 (123) 234 45 45</a>
+                    </p>
+                    <p>
+                        <span class="icon-call-back"></span>
+                        <button class="js-button" data-target="call-back">Обратная связь</button>
+                    </p>
+                    <p>
+                        <span class="icon-place"></span>
+                        <span>Москва, Подольское ш., д.8</span>
+                    </p>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#">Магазин</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">доставка</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">о компании</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">фотогалерея</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">документация</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">рецепты</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">отзывы</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">контакты</a>
+                    </li>
+                </ul>
+                <div class="footer-mobile__info">
+                    <a href="/" class="footer_logo">
+                        <img src="./img/footer-logo.svg" alt="Logo">
+                    </a>
+                    <div class="footer__contact-info">
+                        <p>
+                            <span class="icon-phone"></span>
+                            <a href="tel: +7 (123) 234 45 45">+7 (123) 234 45 45</a>
+                        </p>
+                        <p>
+                            <span class="icon-call-back"></span>
+                            <button class="js-button" data-target="call-back">Обратная связь</button>
+                        </p>
+                        <p>
+                            <span class="icon-place"></span>
+                            <span>Москва, Подольское ш., д.8</span>
+                        </p>
+                    </div>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-fb"></span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-vk"></span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-e-mail"></span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#"><span class="icon-inst"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__coryright">
+            <div class="container">
+                <p>Space Health | 2020 | Все права защищены</p>
+                <p>
+                    <a href="#">Политика конфиденциальности</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <section class="js-popup popup__call-back popup" data-target="call-back">
+        <div class="popup_wrapper">
+            <button class="js-close close__popup">
+                <span class="icon-close"></span>
+            </button>
+            <form action="#">
+                <h3>Обратный звонок</h3>
+                <p>Укажите номер телефона и мы свяжемся с вами в ближайшее время</p>
+                <label class="input__wrapper js-wrapper">
+                    <span>Ваше имя</span>
+                    <input class="main_input js-input" type="text" placeholder="Имя" value="">
+                </label>
+                <label class="input__wrapper js-wrapper">
+                    <span>Ваш номер телефона</span>
+                    <input class="main_input js-input" type="tel" placeholder="+7 (123) 234 45 45">
+                </label>
+                <button type="submit" class="main-button-color">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</button>
+            </form>
+        </div>
+    </section>
+    <section class="js-popup popup__add-reviews popup" data-target="reviews">
+        <div class="review_form__wrapper">
+            <button class="js-close close__popup">
+                <span class="icon-close"></span>
+            </button>
+            <h5>Оцените Super Food</h5>
+            <form action="#">
+                <ul class="star__list">
+                    <li class="star__item" data-target="1">
+                        <span class="icon-star"></span>
+                    </li>
+                    <li class="star__item" data-target="2">
+                        <span class="icon-star"></span>
+                    </li>
+                    <li class="star__item" data-target="3">
+                        <span class="icon-star"></span>
+                    </li>
+                    <li class="star__item" data-target="4">
+                        <span class="icon-star"></span>
+                    </li>
+                    <li class="star__item" data-target="5">
+                        <span class="icon-star"></span>
+                    </li>
+                </ul>
+                <input type="hidden" class="stars__input" value="5">
+                <div class="wrapper">
+                    <div class="wrapper-photo">
+                        <label class="add-photo">
+                            <input class="file_input" type="file" name="text_review_file" onchange="previewFile()" accept=".jpg, .jpeg, .png, .svg">
+                            <img src="" alt="Фото">
+                            <span class="custome_button">
+                                <span class="hover"></span>
+                            </span>
+                        </label>
+                        <span role="button" class="delete-photo"></span>
+                    </div>
+                    <fieldset>
+                        <label class="input__wrapper js-wrapper">
+                            <span>Ваш E-mail*</span>
+                            <input class="main_input js-input" type="email" placeholder="ivanov.ivan@gmail.com">
+                        </label>
+                        <label class="input__wrapper js-wrapper">
+                            <span>Ваше имя*</span>
+                            <input class="main_input js-input" type="text" placeholder="Иван" value="">
+                        </label>
+                    </fieldset>
+                </div>
+                <label class="input__wrapper js-wrapper">
+                    <span>Выберите Super Food, для которого хотите оставить  отзыв</span>
+                    <input class="main_input js-input" type="text" placeholder="Super Food">
+                </label>
+                <label class="input__wrapper js-wrapper">
+                    <span>Ваш отзыв*</span>
+                    <textarea class="main_input js-input" type="text" placeholder="Напишите отзыв ..."></textarea>
+                </label>
+                <button type="submit" class="main_button form">ОПУБЛИКОВАТЬ ОТЗЫВ</button>
+            </form>
+        </div>
+    </section>
+    <div class="overlay"></div>
+    <script src="./js/main.js"></script>
+    <script>
+        function previewFile() {
+            let preview = document.querySelector('.add-photo img');
+            let file = document.querySelector('.file_input').files[0];
+            
+            if(file.size > 3000000){
+                noty('error', "Размер файла превышает допустимый размер!");
+                file.value = null;
+                return;
+            };
+            
+            let reader = new FileReader();
+            reader.onloadend = function () {
+                let src = reader.result;
+                preview.setAttribute("src", src);
+                
+                preview.closest('.add-photo').classList.add('active');
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "";
+            }
+            
+            document.querySelector('.delete-photo').addEventListener('click', function(){
+                preview.closest('.add-photo').classList.remove('active');
+                document.querySelector('.file_input').value = null;
+            });
+        }
+
+        // Show reviews form 
+
+        let reviewsButton = document.querySelector('.reviews .reviews_button');
+        let reviewsWrapper = document.querySelector('.reviews');
+
+        reviewsButton.addEventListener('click', function(){
+            reviewsWrapper.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

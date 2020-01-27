@@ -4,7 +4,7 @@
     }
     
     .main_caption {
-        font-size: 24px;
+        font-size: 36px;
         line-height: 32px;
     }
     
@@ -24,8 +24,11 @@
     
     /* Reviews */
     
+    .add_reviews__list {
+        margin-bottom: 55px;
+    }
+
     .review_form__wrapper {
-        width: 700px;
         padding: 40px 30px 30px;
     }
     
@@ -59,6 +62,10 @@
         .main_button {
             margin-top: 30px;
         }
+        
+        .star__list {
+            margin: 24px 0px 32px;
+        }
     }
     
     .input__wrapper {
@@ -73,20 +80,38 @@
         max-width: 400px;
     }
     
+    .breadcrumbs__list {
+        margin-bottom: 30px;
+    }
+    
     .main_caption {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 27px;
     }
     
+    .main_button {
+        max-width: 100%;
+    }
     /* Reviews */
     
     .add_reviews__item {
+        &.active {
+            .reviews__info {
+                .content {
+                    max-height: 650px;
+                }
+            }
+        }
         .reviews_img {
             display: none;
         }
         
         .reviews__info {
             width: 100%;
+
+            .content {
+                max-height: 360px;
+            }
         }
     }
     
@@ -99,6 +124,58 @@
             width: 58px;
             height: 58px;
             border-radius: 50%;
+        }
+
+        .wrapper {
+            width: calc(100% - 68px);
+
+            > div {
+                flex-direction: column;
+            }
+
+            .reviews-name {
+                order: 1;
+            }
+
+            .reviews-data {
+                font-size: 10px;
+            }
+        }
+
+        .star__list {
+            margin-bottom: 10px;
+        }
+    }
+
+    .review_form__wrapper {
+
+        h5 {
+            font-size: 18px;
+        }
+
+        .wrapper {
+            flex-direction: column;
+
+            fieldset {
+                width: 100%;
+            }
+        }
+
+        .wrapper-photo {
+            width: 100px;
+            margin-right: 0px;
+        }
+
+        .star__item {
+            padding-right: 5px;
+
+            span {
+                font-size: 20px;
+            }
+        } 
+
+        .star__list {
+            margin: 16px 0px 28px;
         }
     }
 }

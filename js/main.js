@@ -317,6 +317,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     arrowPrev.classList.add('disable');
                 }
             });
+
+            var startPointX;
+            var startPointY;
+            slider.addEventListener("touchstart", function(event) {
+                startPointX = event.changedTouches[0].screenX;
+                startPointY = event.changedTouches[0].screenY;
+            }, false);
+            slider.addEventListener("touchend", function(event){
+                var endPointX = event.changedTouches[0].screenX;
+                var endPointY = event.changedTouches[0].screenY;
+                
+                if(startPointX - endPointX > 40) {
+                    arrowNext.click();
+                } else if(endPointX - startPointX > 40) {
+                    arrowPrev.click();
+                }
+            }, false);
         }
     }
     initialSlider();
@@ -410,9 +427,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             calcInput.value = +calcInput.value - 1;
             calcDecorInput.innerHTML = calcInput.value;
         });
-     })
-    
-
+     });
 });
 
 

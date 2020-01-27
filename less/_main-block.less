@@ -25,7 +25,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
-    transition: opacity .4s;
+    transition: opacity .8s;
     z-index: -1;
     
     &.show {
@@ -34,8 +34,7 @@ main {
         z-index: 1;
         
         .slider_info {
-            top: 0px;
-            opacity: 1;
+            animation-name: main-slider;
         }
     }
 }
@@ -44,9 +43,10 @@ main {
     padding-top: 275px;
     max-width: 700px;
     position: relative;
-    top: -200px;
-    opacity: 0;
-    transition: top .8s, opacity 1.6s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
     
     .main_caption {
         margin-bottom: 25px;
@@ -57,6 +57,22 @@ main {
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 35px;
+    }
+}
+
+@keyframes main-slider {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        -ms-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
     }
 }
 
@@ -222,7 +238,7 @@ main {
         
         .blog__item {
            flex-shrink: 0;
-           
+
            &:last-of-type {
                margin-right: 0px;
            }
@@ -414,7 +430,6 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 130px;
     padding: 70px 0px;
 }
 
@@ -471,7 +486,7 @@ main {
     }
 }
 .main_reviews {
-    margin-bottom: 130px;
+    margin: 130px 0px;
 }
 
 .main_reviews__text-wrapper {
@@ -1312,7 +1327,7 @@ main {
     margin-bottom: 110px;
 }
 
-.product-tabs__list {
+.general-tabs__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1326,7 +1341,7 @@ main {
     text-align: center;
 }
 
-.product-tabs__item {
+.general-tabs__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1398,9 +1413,99 @@ main {
 
 /* Add reviews */
 
+.reviews {
+    .review_form__wrapper {
+        padding: 0px;
+        height: 0px;
+        margin: 0px;
+        transition: height .2s, margin .4s;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 100px;
+            top: 80px;
+            width: 95px;
+            height: 70px;
+            background: url(../img/leaf-1.png) no-repeat center;
+            background-size: contain;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 60px;
+            height: 70px;
+            background: url(../img/leaf-2.png) no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    .reviews_button {
+        &::before {
+            content: "добавить отзыв";
+        }
+    }
+
+    &.active {
+        .reviews_button {
+            &::before {
+                content: "оставить отзыв позже";
+            }
+        }
+        .review_form__wrapper {
+            height: 730px;
+            margin: 80px 0px 150px;
+            padding: 0px 170px;
+            transition: height .6s, margin .4s;
+            overflow: initial;
+        }
+    }
+    
+    .add_reviews__list {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: -65px;
+            top: 30px;
+            width: 70px;
+            height: 70px;
+            background: url(../img/leaf-3.png) no-repeat center;
+            background-size: contain;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: -60px;
+            bottom: -60px;
+            width: 60px;
+            height: 70px;
+            background: url(../img/leaf-4.png) no-repeat center;
+            background-size: contain;
+        }
+    }
+}
+
 .add_reviews__wrapper {
+    margin-bottom: 80px;
+
     .main_button {
         margin: 30px auto 40px;
+    }
+
+    .main_caption {
+        margin-bottom: 80px;
+    }
+
+    .add_reviews__list {
+        margin-bottom: 50px;
     }
 }
 
@@ -1491,3 +1596,140 @@ main {
 
 
 /* /Add reviews */
+
+/* Blog page */
+
+.blog-page {
+    margin-bottom: 80px;
+
+    .general-tabs__list {
+        justify-content: flex-start;
+        margin-top: 55px;
+    }
+
+    .blog__item {
+        margin-bottom: 32px;
+    }
+
+    .main_button {
+        margin: 0px auto;
+    }
+}
+
+/* /Blog page */
+
+/* Recipe */
+
+.recipe__wrapper {
+    margin-bottom: 80px;
+
+    .main_button {
+        margin: 0px auto;
+    }
+}
+
+.recipe__list {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -110px;
+}
+
+
+.recipe__item {
+    display: flex;
+    margin-bottom: 130px;
+    position: relative;
+
+    .img {
+        width: 538px;
+        height: 354px;
+        margin-right: 40px;
+        border-radius: 10px;
+    }
+
+    &:nth-child(2n) {
+        align-self: center;
+
+        .recipe-decor {
+            position: absolute;
+            left: -110px;
+            bottom: 60px;
+            width: 105px;
+            height: 90px;
+            background: url(../img/recipe-img-decor-4.png) no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    .recipe-decor {
+        position: absolute;
+        right: 70px;
+        bottom: -60px;
+        width: 60px;
+        height: 70px;
+        background: url(../img/recipe-img-decor-3.png) no-repeat center;
+        background-size: contain;
+    }
+
+    &.start {
+        .recipe-decor {
+            position: absolute;
+            right: 135px;
+            top: -60px;
+            width: 80px;
+            height: 95px;
+            background: url(../img/recipe-img-decor-1.png) no-repeat center;
+            background-size: contain;
+        }
+
+        .img {
+            order: 1;
+            margin-right: 0px;
+            margin-left: 125px;
+        }
+
+        + .recipe__item {
+            .img {
+                order: 1;
+                margin-right: 0px;
+                margin-left: 125px;
+            }
+
+            .recipe-decor {
+                position: absolute;
+                left: -100px;
+                top: -60px;
+                width: 110px;
+                height: 125px;
+                background: url(../img/recipe-img-decor-2.png) no-repeat center;
+                background-size: contain;
+            }
+        }
+    }
+}
+
+.recipe_description {
+    width: 265px;
+    font-size: 16px;
+    line-height: 24px;
+
+    .caption {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 32px;
+    }
+
+    .sub-caption {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    ul {
+        margin-bottom: 32px;
+    }
+
+    li {
+        margin-bottom: 14px;
+    }
+}

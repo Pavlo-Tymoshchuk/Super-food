@@ -56,6 +56,11 @@
     }
 }
 
+.popup__add-reviews {
+    
+    width: 840px;
+}
+
 .popup__call-back {
     max-width: 480px;
     background-color: #fff;
@@ -67,7 +72,6 @@
 }
 
 .popup_wrapper {
-    
     form {
         display: flex;
         flex-direction: column;
@@ -132,6 +136,11 @@
     } 
     
     .popup__add-reviews {
+        width: 700px;
+        
+    }
+
+    .popup__add-reviews {
         &::before {
             left: 50px;
             top: 70px;
@@ -147,12 +156,25 @@
         padding: 50px 20px 20px;
     }
     
+    .popup__add-reviews {
+        width: 95%;
+        max-width: 100%;
+    }
+
     .close__popup {
         width: 35px;
         height: 35px;
         
         span {
             font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .popup__add-reviews {
+        &::before {
+            left: 5px;
         }
     }
 }
