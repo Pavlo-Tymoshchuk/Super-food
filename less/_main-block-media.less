@@ -701,7 +701,172 @@
         }
     }
 
-    /* Recipe */
+    /* /Recipe */
+    
+    /* Card */
+    
+    .card {
+        margin-bottom: 100px;
+    }
+    
+    .card__item {
+        .description-footer {
+            position: relative;
+            
+            .card-weight {
+                margin-bottom: 42px;
+            }
+        }
+        
+        .product-calc {
+            position: absolute;
+            right: -23px;
+            top: -13px;
+        }
+    }
+    
+    .card__description {
+        width: calc(75% - 15px);
+    }
+    
+    /* /Card */
+    
+    /* Page info */
+    
+    .page-info {
+        margin-bottom: 80px;
+    }
+    
+    .page-info__wrapper {
+        h5 {
+            font-size: 16px;
+        }
+        
+        .time-publication {
+            font-size: 12px;
+        }
+        
+        .main_caption {
+            margin-bottom: 24px;
+        }
+        
+        .page-info__img {
+            margin-bottom: 24px;
+        }
+    }
+    
+    .page-info__description {
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+    }
+    
+    .page-info__buttons {
+        margin-top: 10px;
+        
+        a {
+            max-width: 300px;
+        }
+    }
+    
+    /* /Page info */
+    
+    /* Photo page */
+    
+    .photo__wrapper {
+        margin-bottom: 95px;
+    }
+    
+    .photo__item {
+        width: 342px;
+        height: 213px;
+        margin-bottom: 32px;
+    }
+    
+    .photo__list {
+        margin-bottom: 10px;
+        
+        .wrapper {
+            &:nth-of-type(2) {
+                margin-top: 40px;
+            }
+        }
+    }
+    
+    /* /Photo page */
+    
+    /* Document page */
+    
+    .document-page__list {
+        margin-right: -20px;
+        margin-bottom: 95px;
+    }
+    
+    .document-page__item {
+        width: 220px;
+        margin-right: 20px;
+        
+        h4 {
+            font-size: 18px;
+            margin-top: 24px;
+        }
+        
+        .document-time {
+            font-size: 14px;
+        }
+    }
+    
+    /* /Document page */
+    
+    /* Contact */
+    
+    .contact__form {
+        padding: 0px;
+        margin-bottom: 50px;
+        
+        &::before {
+            display: none;
+        }
+        
+        .main_caption {
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+        
+        .input__wrapper {
+            margin-bottom: 16px;
+        }
+        
+        .main_button {
+            margin-top: 32px;
+        }
+    }
+    
+    .contact__address {
+        flex-direction: column;
+        
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            order: 1;
+            
+            > div {
+                width: calc(50% - 15px);
+            }
+        }
+        
+        .map {
+             width: 100%;
+             height: 525px;
+             margin-bottom: 32px;
+        }
+    }
+    
+    .cantact__address-name {
+        font-size: 18px;
+    }
+    
+    /* /Contact */
 }
 
 @media (max-width: 768px) {
@@ -1053,6 +1218,262 @@
         .recipe-decor {
             display: none;
         }
+    }
+    
+    /* /Recipe */
+    
+    /* Card */
+    
+    .card {
+        margin-bottom: 80px;
+    }
+    
+    .card__item {
+        font-size: 14px;
+        padding: 20px;
+        margin-bottom: 24px;
+        
+        .card__img {
+            display: none;
+        }
+        
+        &:last-child {
+            margin-bottom: 34px;
+        }
+    }
+    
+    .card__description {
+        width: 100%;
+    }
+    
+    .description-header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #C4CED6;
+        
+        h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .card-code {
+            margin-bottom: 8px;
+        }
+        
+        .card__img {
+            display: block;
+            width: calc(25% - 10px);
+            height: 86px;
+        }
+        
+        .wrapper {
+            width: calc(75% - 10px);
+            border: none;
+            padding-bottom: 20px;
+        }
+        
+        .card-weight {
+            display: block;
+        }
+    }
+    
+    .description-footer {
+        .card-weight {
+            display: none;
+        }
+        
+        .wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .product-calc {
+            position: relative;
+            right: -5px;
+            top: 0px;
+        }
+    }
+    
+    .card__description {
+        .price__wrapper {
+            .price {
+                font-size: 15px;
+            }
+            
+            .price_old {
+                font-size: 14px;
+            }
+        }
+        
+        .product-calc {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .total-price {
+            .description {
+                font-size: 16px;
+            }
+        }
+    }
+    
+    .total-price__wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        .total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 32px;
+        }
+        
+        .main-button-color {
+            max-width: 360px;
+        }
+    }
+    
+    /* /Card */
+    
+    /* Page info */
+    
+    .page-info {
+        margin-bottom: 55px;
+    }
+    
+    .page-info__wrapper {
+        h5 {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .main_caption {
+            font-size: 24px;
+            line-height: 31px;
+            margin-bottom: 20px;
+        }
+        
+        .page-info__img {
+            height: 100px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .page-info__description {
+        p {
+            margin-bottom: 28px;
+        }
+        
+        ul {
+            margin-bottom: 28px;
+        }
+        
+        li {
+            margin-bottom: 22px;
+        }
+        
+        h3 {
+            margin-top: 22px;
+            margin-bottom: 34px;
+        }
+    }
+    
+    .page-info__buttons {
+        a {
+            font-size: 0px;
+            
+            span {
+                font-size: 16px;
+            }
+            
+            &.next-page {
+                span {
+                    top: 0px;
+                }
+            } 
+        }
+    }
+    
+    /* /Page info */
+    
+    /* Photo page */
+    
+    .photo__wrapper {
+        margin-bottom: 50px;
+    }
+    
+    .photo__item {
+        width: 100%;
+        height: 175px;
+        margin-bottom: 24px;
+    }
+    
+    /* /Photo page */
+    
+    /* Document page */
+    
+    .document-page__wrapper {
+        .document-sub {
+            margin-top: 16px;
+        }
+    }
+    
+    .document-page__list {
+        margin-bottom: 0px;
+    }
+    
+    .document-page__item {
+        width: 100%;
+        margin-bottom: 50px;
+        
+        .img {
+            height: 400px;
+        }
+    }
+    
+    /* /Document page */
+    
+    /* Contact */
+    
+    .contact__address {
+        margin-bottom: 55px;
+        
+        .map {
+            height: 415px;
+            margin-bottom: 24px;
+        }
+        
+        .wrapper {
+            flex-direction: column;
+            
+            > div {
+                width: 100%;
+            }
+        }
+    }
+    
+    .contact__form {
+        .main_caption {
+            font-size: 18px;
+        }
+        
+        .wrapper {
+            flex-direction: column;
+            
+            .input__wrapper {
+                width: 100%;
+            }
+        }
+        
+        .main_button {
+            margin-top: 22px;
+        }
+    }
+    
+    .contact__list {
+        margin-bottom: 24px;
     }
 }
 

@@ -177,6 +177,96 @@
     
     /* /Product */
     
+    /* Card */
+    
+    .card__item {
+        transition: box-shadow .4s;
+        
+        &:hover {
+            box-shadow: 0px 4px 25px rgba(133, 147, 159, 0.5);
+        }
+    }
+    
+    .card__wrapper-header {
+        .delete-card {
+            transition: color .4s;
+            
+            &:hover {
+                color: #2C567C;
+            }
+        }
+    }
+    
+    /* /Card */
+    
+    /* Page info */
+    
+    .page-info__buttons {
+        a {
+            transition: color .4s;
+            
+            span {
+                &::before {
+                    transition: color .4s;
+                }
+            }
+        }
+        
+        a:hover {
+            color: #2C567C;
+            
+            span {
+                &::before {
+                    color: #2C567C;
+                }
+            }
+        }
+    }
+    
+    /*/ Page info */
+    
+    /* Contact */
+    
+    .contact__link {
+        transition: color .4s;
+        
+        &:hover {
+            color: #2C567C;
+        }
+    }
+    
+    /* Contact */
+    
+    /* Delivery */
+    
+    .delivery__link {
+        transition: color .4s;
+        
+        &::before {
+            background-color: .4s;
+        }
+        
+        &:hover {
+            color: #11bd11;
+            
+            &::before {
+                background-color: #11bd11;
+            }
+        }
+    }
+    
+    .delivery-callback {
+        a {
+            transition: color .4s;
+            
+            &:hover {
+                color: #2C567C;
+            }
+        }
+    }
+    
+    /* /Delivery */
+    
     .more_info {
         transition: color .4s;
         
