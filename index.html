@@ -178,6 +178,17 @@
                         <img src="./img/autumn.png" alt="Листок">
                     </div>
                 </li>
+                <li class="noty_theme__push_notification__item noty_type__review">
+                    <button class="close__popup"><span class="icon-close"></span></button>
+                    <h3>Спасибо за Ваш отзыв!</h3>
+                    <p>Благодаря вам мы становимся лучше!</p>
+                    <div class="img">
+                        <img src="./img/green.png" alt="Листок">
+                    </div>
+                    <div class="img img-error">
+                        <img src="./img/autumn.png" alt="Листок">
+                    </div>
+                </li>
             </ul>
         </section> -->
     </header>
@@ -1068,6 +1079,26 @@
                 showItemImg.previousElementSibling.classList.add('prev');
             }
         });
+        
+        var startPointX;
+        var startPointY;
+        
+        var reviewsSlider = document.querySelector('.main_reviews__wrapper');
+        
+        reviewsSlider.addEventListener("touchstart", function(event) {
+            startPointX = event.changedTouches[0].screenX;
+            startPointY = event.changedTouches[0].screenY;
+        }, false);
+        reviewsSlider.addEventListener("touchend", function(event){
+            var endPointX = event.changedTouches[0].screenX;
+            var endPointY = event.changedTouches[0].screenY;
+            
+            if(startPointX - endPointX > 40) {
+                buttonNextReviews.click();
+            } else if(endPointX - startPointX > 40) {
+                buttonPrevReviews.click();
+            }
+        }, false);
     </script>
 </body>
 </html>

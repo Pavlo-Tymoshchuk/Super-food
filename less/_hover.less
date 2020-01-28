@@ -40,6 +40,30 @@
         }
     }
     
+    .button-search,
+    .button-car {
+        span {
+            &::before {
+                transition: color .4s;
+            }
+        }
+        
+        &:hover {
+            span {
+                &::before {
+                    color: #565f67;
+                }
+            }
+            
+            &:active {
+                span {
+                    &::before {
+                        color: #bccfe1;
+                    }
+                }
+            }
+        }
+    }
     /* /Header hover */
     
     /* General */
@@ -339,6 +363,28 @@
         }
     }
     
+    .footer__item {
+        a {
+            transition: color .4s;
+        }
+        
+        &:hover {
+            a {
+                color: #fff;
+            }
+        }
+    }
+    
+    .footer__coryright {
+        
+        a {
+            transition: color .4s;
+            
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
     /* /Footer */
     
     /* Pagination */
@@ -357,3 +403,4 @@
     
     /* /Pagination */
 }
+

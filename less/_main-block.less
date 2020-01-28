@@ -378,6 +378,7 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    padding: 0px 20px;
 }
 
 /* /Popular products */
@@ -2556,13 +2557,52 @@ main {
 
 .about-us {
     margin-bottom: 80px;
+    
+    .our-secret__wrapper {
+        position: relative;
+        
+        .about-us__decor {
+            position: absolute;
+            right: -100px;
+            top: 130px;
+            width: 60px;
+            height: 80px;
+            background: url(../img/leaf-2.png) no-repeat center;
+            background-size: contain;
+        }
+    }
 }
 
+.about-us__wrapper {
+    position: relative;
+    
+    > .about-us__decor {
+        position: absolute;
+        left: -450px;
+        bottom: -350px;
+        width: 215px;
+        height: 215px;
+        background: url(../img/about-us-decor.png) no-repeat center;
+        background-size: contain;
+    }
+}
 .about-us__sub-info {
     margin-top: 32px;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+    position: relative;
+    
+    .about-us__decor {
+        position: absolute;
+        left: -50px;
+        top: -50px;
+        width: 55px;
+        height: 75px;
+        background: url(../img/leaf-4.png) no-repeat center;
+        background-size: contain;
+        transform: rotate(90deg);
+    }
 }
 
 .about-us__list {
@@ -2576,10 +2616,31 @@ main {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 150px;
+    position: relative;
+    
+    .about-us__decor {
+        position: absolute;
+        right: -100px;
+        bottom: 20px;
+        width: 75px;
+        height: 75px;
+        background: url(../img/about-us-decor.png) no-repeat center;
+        background-size: contain;
+    }
     
     &:nth-child(2n) {
         .description {
             order: 1;
+        }
+        
+        .about-us__decor {
+            position: absolute;
+            right: -350px;
+            bottom: 250px;
+            width: 120px;
+            height: 120px;
+            background: url(../img/about-us-decor.png) no-repeat center;
+            background-size: contain;
         }
     }
     
@@ -2601,6 +2662,7 @@ main {
         img {
             border-radius: 10px;
             height: 100%;
+            width: 100%;
             object-fit: cover;
         }
     }
@@ -2611,9 +2673,9 @@ main {
     flex-direction: column;
     align-items: center;
     
-    a {
-        &:nth-child(1) {
-            margin-bottom: 32px;
-        }
+    .main-button-color {
+        margin-bottom: 32px;
     }
 }
+
+/* /About us */

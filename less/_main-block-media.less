@@ -14,7 +14,7 @@
     /* Main slider */
     
     .slider_info {
-        max-width: 320px;
+        max-width: 400px;
         padding-top: 105px;
         
         .main_caption {
@@ -27,6 +27,28 @@
         height: 560px;
         margin-top: -50px;
         margin-bottom: 65px;
+    }
+    
+    .slider_item {
+        > div {
+            height: 100%;
+        }
+    }
+    
+    .slider_info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .main-button-color {
+            margin-bottom: 105px;
+        }
+        
+        p {
+            max-height: 150px;
+            overflow: hidden;
+        }
     }
     
     .main-screen__button {
@@ -1019,6 +1041,56 @@
         margin-top: 0px;
         margin-bottom: 100px;
     }
+    
+    /* /Delivery orderpage */
+    
+    /* /About us */
+    
+    .about-us {
+        margin-bottom: 55px;
+        
+        .about-us__decor {
+            display: none;
+        }
+    }
+    
+    .about-us__list {
+        margin-top: 32px;
+    }
+    
+    .about-us__sub-info {
+        margin-top: 16px;
+        font-weight: 600;
+    }
+    
+    .about-us__item {
+        flex-direction: column;
+        margin-bottom: 100px;
+        
+        h5 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        
+        .description {
+            width: 100%;
+            order: 1;
+        }
+        
+        .img {
+            height: 410px;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+    
+    .about-us-buttons__wrapper {
+        .main-button-color {
+            margin-bottom: 16px;
+        }
+    }
+    
+    /* /About us */
 }
 
 @media (max-width: 768px) {
@@ -1030,12 +1102,21 @@
     }
     
     .slider_info  {
-        max-width: 280px;
+        max-width: 100%;
+        padding-top: 90px;
+        
+        .main-button-color {
+            margin-bottom: 90px;
+        }
+        
+        .main_caption {
+            font-size: 20px;
+            line-height: 27px;
+        }
         
         p {
             margin-bottom: 30px;
-            max-height: 168px;
-            overflow: hidden;
+            max-height: 200px;
         }
     }
     
@@ -1087,6 +1168,20 @@
         .product__list,
         .blog__list {
             padding-left: calc((100vw - 400px) / 2);
+        }
+        
+        .product__item {
+            width: 280px;
+            margin-right: 10px;
+            
+            &:last-of-type {
+                margin-right: 20px;
+            }
+        }
+        
+        .blog__item {
+            width: 280px;
+            margin-right: 10px;
         }
     }
     
@@ -1698,9 +1793,42 @@
         width: 100%;
         margin-right: 0px;
     }
+    
+    /* /Delivey orderpage */
+    
+    /* About us */
+    
+    .about-us__item {
+        margin-bottom: 55px;
+        
+        h5 {
+            font-size: 18px;
+            line-height: 27px;
+        }
+        
+        .img {
+            height: 160px;
+            margin-bottom: 16px;
+        }
+    }
+    
+    .about-us-buttons__wrapper {
+        .main-button-color {
+            max-width: 100%;
+        }
+    }
 }
 
 @media (max-width: 480px) {
+    
+    /* Main slider */
+    
+    .slider_info {
+        p {
+            max-height: 170px;
+        }
+    }
+    
     .main-page {
         .product__list,
         .blog__list {

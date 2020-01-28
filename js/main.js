@@ -9,24 +9,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.querySelector(".header-search").classList.add('active');
     });
     
-    function liveSearch(input, classItem) {
-        input.addEventListener('keyup', function(){
-            document.querySelector(classItem).classList.add('full');
-            if(input.value == "") {
-                document.querySelector(classItem).classList.remove('full');
-            }
-        });
-    }
-    
-    liveSearch(searchInput, ".header-search");
-    liveSearch(searchMobileInput, ".header-mobile-search");
-    
     document.addEventListener("click", function(e){
         let elem = e.target;
         if(!elem.closest('.button-search') && !elem.closest('.header-search__input')) {
             searchInput.value = "";
             document.querySelector(".header-search").classList.remove('active');
-            document.querySelector(".header-search").classList.remove('full');
         }
         
         if(elem.closest('.js-close')) {
