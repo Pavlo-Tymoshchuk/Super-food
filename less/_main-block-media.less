@@ -19,6 +19,7 @@
         
         .main_caption {
             margin-bottom: 8px;
+            line-height: 34px;
         }
     }
     
@@ -87,6 +88,7 @@
         align-items: center;
         margin-bottom: 50px;
         margin-right: 80px;
+        min-height: 165px;
         
         &:last-child {
             margin-bottom: 0px;
@@ -867,6 +869,156 @@
     }
     
     /* /Contact */
+    
+    /* Delivery pageinfo */
+    
+    .delivery__wrapper {
+        .main_caption {
+            margin-bottom: 16px;
+            
+            .delivey-decor {
+                display: none;
+            }
+            
+            &:nth-of-type(2) {
+                .delivery-decor {
+                    display: none;
+                }
+            }
+        }
+    } 
+    
+    .delivery-sub-info {
+        font-size: 16px;
+    }
+    
+    .delivery__list {
+        margin-top: 32px;
+        justify-content: center;
+        margin-right: -30px;
+        margin-bottom: 100px;
+        
+        .delivey-decor {
+            left: auto;
+            right: 80px;
+            bottom: 270px;
+            transform: rotate(120deg);
+        }
+        
+        &.type-order {
+            .delivery__item {
+                width: calc(50% - 30px);
+            }
+        }
+    }
+    
+    .delivery__item {
+        width: calc(50% - 30px);
+        padding: 30px 50px;
+        font-size: 12px;
+        line-height: 18px;
+        margin-right: 30px;
+        
+        .delivey-decor {
+            display: none;
+        }
+        
+        h3 {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 16px;
+        }
+        
+        &:nth-child(3) {
+            margin-top: 32px;
+            margin-right: 0px;
+        }
+        
+        .info {
+            margin-top: 60px;
+        }
+    }
+    
+    .delivery__link {
+        margin-bottom: 20px;
+    }
+    
+    .delivery-sub-info {
+        line-height: 24px;
+        
+        .delivey-decor {
+            right: auto;
+            left: 190px;
+            top: -90px;
+            transform: rotate(-30deg);
+        }
+    }
+    
+    .delivery-button {
+        margin-bottom: 32px;
+    }
+    
+    .delivery-callback {
+        font-size: 15px;
+        
+        .delivey-decor {
+            display: none;
+        }
+    }
+    
+    /* /Delivery pageinfo */
+    
+    /* Delivery orderpage */
+    
+    .delivery-data {
+        max-height: 370px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        
+        &.delivery-point-form {
+            flex-direction: column;
+        }
+        
+        .input__wrapper {
+            width: calc(50% - 20px);
+            
+            textarea {
+                height: 158px;
+                padding-top: 15px;
+                resize: none;
+            }
+            
+            p {
+                margin-top: 8px;
+                font-size: 14px;
+                line-height: 22px;
+                
+                a {
+                    font-weight: 700;
+                }
+            }
+            
+            &.textarea {
+                width: 100%;
+            }
+        }
+    }
+    
+    .delivery-type-caption {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 0px;
+    }
+    
+    .delivery-point__item {
+        width: calc(50% - 15px);
+    }
+    
+    .delivery-point {
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1474,6 +1626,77 @@
     
     .contact__list {
         margin-bottom: 24px;
+    }
+    
+    /* /Contact */
+    
+    /* Delivery pageinfo */
+    
+    .delivery__wrapper{
+        margin-bottom: 55px;
+        
+        .delivey-decor {
+            display: none;
+        }
+    }
+    
+    .delivery__list {
+        margin-right: 0px;
+        margin-bottom: 25px;
+        
+        &.type-order {
+            margin-bottom: 0px;
+        }
+    }
+    
+    .delivery-button {
+        .main-button-color {
+            max-width: 100%;
+        }
+    }
+    
+    .delivery__item {
+        width: 100% !important;
+        margin-right: 0px;
+        margin-bottom: 32px;
+        padding: 30px 20px;
+        
+        &:nth-child(3) {
+            margin-top: 0px;
+        }
+    }
+    
+    /* /Delivery pageinfo */
+    
+    /* Delivey orderpage */
+    
+    .delivery-data {
+        max-height: 100%;
+        margin-bottom: 50px;
+        
+        .input__wrapper {
+            width: 100%;
+        }
+    }
+    
+    .delivery-point {
+        margin-bottom: 50px;
+    }
+    
+    .delivery-type-caption {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 24px;
+    }
+    
+    .delivery-point__list {
+        margin-right: 0px;
+        margin-top: 16px;
+    }
+    
+    .delivery-point__item {
+        width: 100%;
+        margin-right: 0px;
     }
 }
 
